@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class Biscuit: UIView {
+class Biscuit: UIView {
 
     // MARK: - Properties
     @IBOutlet weak var imageView: UIImageView!
@@ -45,12 +45,6 @@ import UIKit
     private func setupView() {
         let view = viewFromNibForClass()
         view.frame = bounds
-        
-        // Auto-layout stuff.
-        view.autoresizingMask = [
-            UIViewAutoresizing.flexibleWidth,
-            UIViewAutoresizing.flexibleHeight
-        ]
         
         // Show the view.
         addSubview(view)

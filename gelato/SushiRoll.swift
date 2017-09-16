@@ -23,10 +23,14 @@ import UIKit
     }
         
     private func putBiscuits() {
-        for _ in 0..<5 {
+        for _ in 0..<3 {
             // Create the button
             let biscuit = Biscuit()
             biscuit.backgroundColor = UIColor.red
+
+            
+//            let view = UIView()
+//            view.backgroundColor = UIColor.red
             
             // Add the button to the stack
             addArrangedSubview(biscuit)
