@@ -25,6 +25,7 @@
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Biscuit" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-KK-NLg" userLabel="Image">
                     <rect key="frame" x="0.0" y="0.0" width="172" height="147"/>
+                    <gestureRecognizers/>
                     <constraints>
                         <constraint firstAttribute="width" constant="172" id="Y4D-56-rYQ"/>
                     </constraints>
@@ -84,8 +85,17 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="A29-n7-wej" appends="YES" id="BOA-bk-KsO"/>
+            </connections>
             <point key="canvasLocation" x="58" y="72.5"/>
         </view>
+        <tapGestureRecognizer id="A29-n7-wej">
+            <connections>
+                <action selector="tapBiscuit:" destination="-1" id="Qpg-Ay-pWl"/>
+                <outlet property="delegate" destination="-1" id="p6w-ll-sKD"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="Biscuit" width="150" height="125"/>

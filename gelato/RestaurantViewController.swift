@@ -10,9 +10,12 @@ import UIKit
 
 class RestaurantViewController: UIViewController {
 
+    var restaurantID = 0
+    var biscuitID = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        print(restaurantID, biscuitID)
         // Do any additional setup after loading the view.
     }
 
