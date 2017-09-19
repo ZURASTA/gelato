@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="2226.4000000000001" y="263.05418719211826"/>
         </scene>
-        <!--View Controller-->
+        <!--Restaurant View Controller-->
         <scene sceneID="WVf-pd-Tux">
             <objects>
-                <viewController id="vEe-XP-Ifa" sceneMemberID="viewController">
+                <viewController id="vEe-XP-Ifa" customClass="RestaurantViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3sw-6e-sgO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BU9-Lh-jGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3093" y="457"/>
+            <point key="canvasLocation" x="3017" y="265"/>
+        </scene>
+        <!--Meal View Controller-->
+        <scene sceneID="RkX-GW-jD8">
+            <objects>
+                <viewController id="khR-1U-sq1" customClass="MealViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RmF-go-cOz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="uQy-yc-4zw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSf-wf-bJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3866" y="265"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="65c-5E-Ufs">
+            <objects>
+                <viewController id="EpB-sj-gpD" customClass="PaymentViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Eh-CV-C5a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="ikR-Cm-sMU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igo-1u-wmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4770" y="263"/>
+        </scene>
+        <!--Tracking View Controller-->
+        <scene sceneID="qlu-Ye-wHR">
+            <objects>
+                <viewController id="hQa-MX-5iq" customClass="TrackingViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G7L-dh-ETi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="dB3-j7-ADZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0c7-cE-ySZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5694" y="262"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="VHK-DV-t2O">

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */; };
 		20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA11F70C7340008D557 /* FilterViewController.swift */; };
+		20712AA41F70CA1F0008D557 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA31F70CA1F0008D557 /* RestaurantViewController.swift */; };
+		20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA51F70CA5E0008D557 /* MealViewController.swift */; };
+		20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA71F70CA6D0008D557 /* PaymentViewController.swift */; };
+		20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA91F70CA770008D557 /* TrackingViewController.swift */; };
 		20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A963701F6D1DAB00F528F4 /* Main.storyboard */; };
 		20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A51F5F967700C1FEEF /* AppDelegate.swift */; };
 		20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A71F5F967700C1FEEF /* MainViewController.swift */; };
@@ -41,6 +45,10 @@
 /* Begin PBXFileReference section */
 		200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiRoll.swift; sourceTree = "<group>"; };
 		20712AA11F70C7340008D557 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		20712AA31F70CA1F0008D557 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		20712AA51F70CA5E0008D557 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		20712AA71F70CA6D0008D557 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		20712AA91F70CA770008D557 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		20A963711F6D1DAB00F528F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20B276A21F5F967700C1FEEF /* gelato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gelato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B276A51F5F967700C1FEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +92,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20712AAC1F70CACA0008D557 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
+				20712AA11F70C7340008D557 /* FilterViewController.swift */,
+				20712AA31F70CA1F0008D557 /* RestaurantViewController.swift */,
+				20712AA51F70CA5E0008D557 /* MealViewController.swift */,
+				20712AA71F70CA6D0008D557 /* PaymentViewController.swift */,
+				20712AA91F70CA770008D557 /* TrackingViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
 		20B276991F5F967700C1FEEF = {
 			isa = PBXGroup;
 			children = (
@@ -108,14 +129,13 @@
 			isa = PBXGroup;
 			children = (
 				20B276A51F5F967700C1FEEF /* AppDelegate.swift */,
-				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
-				20712AA11F70C7340008D557 /* FilterViewController.swift */,
+				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
+				20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */,
+				20B276B41F5F967700C1FEEF /* Info.plist */,
+				20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */,
 				20A963701F6D1DAB00F528F4 /* Main.storyboard */,
 				20B276DA1F5FAA1F00C1FEEF /* UI Component */,
-				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
-				20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */,
-				20B276B41F5F967700C1FEEF /* Info.plist */,
-				20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */,
+				20712AAC1F70CACA0008D557 /* View Controller */,
 			);
 			path = gelato;
 			sourceTree = "<group>";
@@ -284,10 +304,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
+				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
 				20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */,
+				20712AA41F70CA1F0008D557 /* RestaurantViewController.swift in Sources */,
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
+				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,
 				20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */,
 				200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */,
+				20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */,
 				20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
