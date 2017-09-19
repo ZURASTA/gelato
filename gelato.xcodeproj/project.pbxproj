@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */; };
+		2060D58B1F71067B00B5490F /* Brownie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2060D58A1F71067B00B5490F /* Brownie.xib */; };
+		2060D58D1F7106D400B5490F /* Brownie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060D58C1F7106D400B5490F /* Brownie.swift */; };
 		20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA11F70C7340008D557 /* FilterViewController.swift */; };
 		20712AA41F70CA1F0008D557 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA31F70CA1F0008D557 /* RestaurantViewController.swift */; };
 		20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA51F70CA5E0008D557 /* MealViewController.swift */; };
@@ -44,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiRoll.swift; sourceTree = "<group>"; };
+		2060D58A1F71067B00B5490F /* Brownie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Brownie.xib; sourceTree = "<group>"; };
+		2060D58C1F7106D400B5490F /* Brownie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brownie.swift; sourceTree = "<group>"; };
 		20712AA11F70C7340008D557 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		20712AA31F70CA1F0008D557 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		20712AA51F70CA5E0008D557 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 			children = (
 				20B276D61F5FA95400C1FEEF /* Biscuit.swift */,
 				20B276D81F5FA99100C1FEEF /* Biscuit.xib */,
+				2060D58C1F7106D400B5490F /* Brownie.swift */,
+				2060D58A1F71067B00B5490F /* Brownie.xib */,
 				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
 			);
 			name = "UI Component";
@@ -276,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */,
+				2060D58B1F71067B00B5490F /* Brownie.xib in Resources */,
 				20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */,
 				20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */,
 				20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */,
@@ -310,6 +317,7 @@
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
 				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,
 				20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */,
+				2060D58D1F7106D400B5490F /* Brownie.swift in Sources */,
 				200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */,
 				20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */,
 				20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */,

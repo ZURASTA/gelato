@@ -18,9 +18,7 @@ class MainViewController: UIViewController, SushiProtocol{
     var rows = 3
     let rowHeight = 290
     var sushi = [SushiRoll]()
-    /*
-     sushiRoll tag is 10, 11, 12
-     */
+    /* sushiRoll tag is 10, 11, 12 */
     var sushiTag = 10
     
     

@@ -140,13 +140,43 @@
                     <view key="view" contentMode="scaleToFill" id="3sw-6e-sgO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-pc-Fr0">
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Brownie" rowHeight="170" id="FOw-8o-anf" customClass="Brownie" customModule="gelato" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="170"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FOw-8o-anf" id="vMo-mc-7jw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.66666666666666"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vEe-XP-Ifa" id="CgA-BQ-Tw1"/>
+                                    <outlet property="delegate" destination="vEe-XP-Ifa" id="5SM-hH-GSd"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V0u-nF-yaW" firstAttribute="bottom" secondItem="x7E-pc-Fr0" secondAttribute="bottom" id="B9I-ad-Jps"/>
+                            <constraint firstItem="x7E-pc-Fr0" firstAttribute="top" secondItem="V0u-nF-yaW" secondAttribute="top" id="Dib-qJ-1Mn"/>
+                            <constraint firstItem="x7E-pc-Fr0" firstAttribute="leading" secondItem="V0u-nF-yaW" secondAttribute="leading" id="eeS-Em-G1P"/>
+                            <constraint firstItem="V0u-nF-yaW" firstAttribute="trailing" secondItem="x7E-pc-Fr0" secondAttribute="trailing" id="hqm-BA-deU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="V0u-nF-yaW"/>
                     </view>
+                    <connections>
+                        <outlet property="brownieTable" destination="x7E-pc-Fr0" id="Jhm-OT-lxD"/>
+                        <segue destination="khR-1U-sq1" kind="showDetail" id="lhq-UA-6qe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BU9-Lh-jGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3068" y="263"/>
+            <point key="canvasLocation" x="3068" y="262"/>
         </scene>
         <!--Meal View Controller-->
         <scene sceneID="RkX-GW-jD8">
@@ -161,7 +191,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PSf-wf-bJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3866" y="265"/>
+            <point key="canvasLocation" x="3908" y="263"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="65c-5E-Ufs">
@@ -176,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igo-1u-wmF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4770" y="263"/>
+            <point key="canvasLocation" x="4801" y="262"/>
         </scene>
         <!--Tracking View Controller-->
         <scene sceneID="qlu-Ye-wHR">
@@ -206,7 +236,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxO-O8-SaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3018" y="-516"/>
+            <point key="canvasLocation" x="3068" y="-513"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qA2-2B-60U">
@@ -222,7 +252,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ym4-Su-0Yc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="266"/>
+            <point key="canvasLocation" x="1354" y="262"/>
         </scene>
     </scenes>
 </document>
