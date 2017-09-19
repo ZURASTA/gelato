@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Biscuit" customModule="gelato" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="bSC-SH-KBz" id="aY4-IV-I9E"/>
+                <outlet property="detailLabel" destination="pTs-r1-z6F" id="l7u-Vz-JIQ"/>
+                <outlet property="imageView" destination="oIc-KK-NLg" id="cIa-Ta-EGs"/>
+                <outlet property="nameLabel" destination="BLO-bN-vV0" id="oJr-gZ-qMA"/>
+                <outlet property="priceLabel" destination="12Z-j8-ZsQ" id="zkq-ZY-yyo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="215"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Biscuit" translatesAutoresizingMaskIntoConstraints="NO" id="oIc-KK-NLg" userLabel="Image">
+                    <rect key="frame" x="0.0" y="0.0" width="172" height="147"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="172" id="Y4D-56-rYQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beetroot Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLO-bN-vV0" userLabel="Name">
+                    <rect key="frame" x="11" y="150" width="140" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh beetroot sandwiched in brown bread" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pTs-r1-z6F" userLabel="Detail">
+                    <rect key="frame" x="11" y="168" width="156" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSC-SH-KBz">
+                    <rect key="frame" x="109" y="191" width="58" height="18"/>
+                    <color key="backgroundColor" red="0.35380139946937561" green="0.9044615626335144" blue="0.78859633207321167" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="addBiscuit:" destination="-1" eventType="touchUpInside" id="OeY-fW-Iaz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$$$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="12Z-j8-ZsQ">
+                    <rect key="frame" x="11" y="198" width="80" height="13"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="pTs-r1-z6F" secondAttribute="trailing" constant="5" id="1NK-1a-mIH"/>
+                <constraint firstItem="BLO-bN-vV0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="150" id="2rm-oe-M4o"/>
+                <constraint firstAttribute="trailing" secondItem="BLO-bN-vV0" secondAttribute="trailing" constant="21" id="4B7-Xg-K1N"/>
+                <constraint firstItem="bSC-SH-KBz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="109" id="7Dg-H1-JrR"/>
+                <constraint firstItem="pTs-r1-z6F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="168" id="AHB-KX-9Lf"/>
+                <constraint firstItem="pTs-r1-z6F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="Es1-BK-2gg"/>
+                <constraint firstItem="oIc-KK-NLg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JAe-SS-xWB"/>
+                <constraint firstItem="bSC-SH-KBz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="191" id="JI9-9l-XJp"/>
+                <constraint firstAttribute="bottom" secondItem="BLO-bN-vV0" secondAttribute="bottom" constant="44" id="LHk-im-30K"/>
+                <constraint firstAttribute="bottom" secondItem="bSC-SH-KBz" secondAttribute="bottom" constant="6" id="LbG-nb-cuN"/>
+                <constraint firstAttribute="trailing" secondItem="bSC-SH-KBz" secondAttribute="trailing" constant="5" id="MRP-Jy-Zhl"/>
+                <constraint firstAttribute="trailing" secondItem="oIc-KK-NLg" secondAttribute="trailing" id="Occ-I2-APm"/>
+                <constraint firstAttribute="bottom" secondItem="pTs-r1-z6F" secondAttribute="bottom" constant="20" id="QAe-r4-naC"/>
+                <constraint firstItem="oIc-KK-NLg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SxO-BB-Qq5"/>
+                <constraint firstAttribute="trailing" secondItem="12Z-j8-ZsQ" secondAttribute="trailing" constant="81" id="ah5-n2-hCT"/>
+                <constraint firstItem="BLO-bN-vV0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="e7k-x0-4w1"/>
+                <constraint firstItem="12Z-j8-ZsQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="eXi-5C-H3r"/>
+                <constraint firstAttribute="bottom" secondItem="oIc-KK-NLg" secondAttribute="bottom" constant="68" id="jvJ-bP-0Eo"/>
+                <constraint firstItem="12Z-j8-ZsQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="198" id="pYu-Lp-LPO"/>
+                <constraint firstAttribute="bottom" secondItem="12Z-j8-ZsQ" secondAttribute="bottom" constant="4" id="uLF-zK-Gcr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58" y="72.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Biscuit" width="150" height="125"/>
+    </resources>
+</document>
