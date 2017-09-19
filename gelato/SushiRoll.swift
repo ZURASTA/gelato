@@ -10,6 +10,10 @@ import UIKit
 
 @IBDesignable class SushiRoll: UIScrollView {
     
+    var sushiSize = 3
+    let sushiWidth = 172
+    let sushiHeight = 215
+    
     // MARK: - Initializers
     
     override init(frame: CGRect) {
@@ -23,22 +27,20 @@ import UIKit
     }
         
     private func putBiscuits(view: UIStackView) {
-        for _ in 0..<3 {
+        for _ in 0..<sushiSize {
             // Create the button
             let biscuit = Biscuit()
             biscuit.backgroundColor = UIColor.red
-            
-//            let view = UIView()
-//            view.backgroundColor = UIColor.red
-            
             // Add the button to the stack
             view.addArrangedSubview(biscuit)
-            
         }
     }
     
     private func setupView(){
-        let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: 536, height: 215))
+        
+        let width = sushiSize * sushiWidth + (sushiSize-1)*10
+        let stackView = UIStackView(frame: CGRect(x: 0, y: 0, width: width, height: sushiHeight))
+        
         stackView.axis = .horizontal
         stackView.spacing = 10.0
         
