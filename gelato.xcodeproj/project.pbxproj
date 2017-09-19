@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */; };
+		20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA11F70C7340008D557 /* FilterViewController.swift */; };
 		20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A963701F6D1DAB00F528F4 /* Main.storyboard */; };
 		20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A51F5F967700C1FEEF /* AppDelegate.swift */; };
-		20B276A81F5F967700C1FEEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A71F5F967700C1FEEF /* ViewController.swift */; };
+		20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A71F5F967700C1FEEF /* MainViewController.swift */; };
 		20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */; };
 		20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B276AF1F5F967700C1FEEF /* Assets.xcassets */; };
 		20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */; };
@@ -39,10 +40,11 @@
 
 /* Begin PBXFileReference section */
 		200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiRoll.swift; sourceTree = "<group>"; };
+		20712AA11F70C7340008D557 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		20A963711F6D1DAB00F528F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20B276A21F5F967700C1FEEF /* gelato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gelato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B276A51F5F967700C1FEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20B276A71F5F967700C1FEEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20B276A71F5F967700C1FEEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		20B276AD1F5F967700C1FEEF /* gelato.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gelato.xcdatamodel; sourceTree = "<group>"; };
 		20B276AF1F5F967700C1FEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B276B21F5F967700C1FEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,7 +108,8 @@
 			isa = PBXGroup;
 			children = (
 				20B276A51F5F967700C1FEEF /* AppDelegate.swift */,
-				20B276A71F5F967700C1FEEF /* ViewController.swift */,
+				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
+				20712AA11F70C7340008D557 /* FilterViewController.swift */,
 				20A963701F6D1DAB00F528F4 /* Main.storyboard */,
 				20B276DA1F5FAA1F00C1FEEF /* UI Component */,
 				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
@@ -280,8 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
 				20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */,
-				20B276A81F5F967700C1FEEF /* ViewController.swift in Sources */,
+				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
 				20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */,
 				200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */,
 				20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */,

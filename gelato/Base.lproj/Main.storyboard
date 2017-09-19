@@ -13,7 +13,7 @@
         <!--Main View Controller-->
         <scene sceneID="J05-c5-gct">
             <objects>
-                <viewController id="3dx-Oi-3wu" userLabel="Main View Controller" customClass="ViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3dx-Oi-3wu" userLabel="Main View Controller" customClass="MainViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UIX-gD-obe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,9 +113,12 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="hJZ-rQ-qlh">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dmt-Nx-WsR">
-                                <rect key="frame" x="313" y="7" width="46" height="30"/>
+                                <rect key="frame" x="311" y="7" width="48" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <segue destination="66B-GI-Ttj" kind="show" id="v3b-g9-Fru"/>
+                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -129,10 +132,25 @@
             </objects>
             <point key="canvasLocation" x="2226.4000000000001" y="263.05418719211826"/>
         </scene>
-        <!--Search View Controller-->
+        <!--View Controller-->
+        <scene sceneID="WVf-pd-Tux">
+            <objects>
+                <viewController id="vEe-XP-Ifa" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3sw-6e-sgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="V0u-nF-yaW"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BU9-Lh-jGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3093" y="457"/>
+        </scene>
+        <!--Filter View Controller-->
         <scene sceneID="VHK-DV-t2O">
             <objects>
-                <viewController id="66B-GI-Ttj" userLabel="Search View Controller" sceneMemberID="viewController">
+                <viewController id="66B-GI-Ttj" customClass="FilterViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qoj-es-AKd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -142,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxO-O8-SaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2226" y="1005"/>
+            <point key="canvasLocation" x="3018" y="-516"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qA2-2B-60U">
