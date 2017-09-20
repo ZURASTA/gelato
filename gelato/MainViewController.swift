@@ -32,6 +32,8 @@ class MainViewController: UIViewController, SushiProtocol{
         /* display current location on title item */
         titleItem.title = "700 Bourke Street"
         
+        /* do not show title on back button on navbar in next VC */
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         
     }
 

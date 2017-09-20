@@ -21,6 +21,14 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         /* do not show empty cells*/
         brownieTable.tableFooterView = UIView(frame: .zero)
         
+        title = "Burger Palace"
+        
+        /* do not show title on back button on navbar in next VC*/
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
+        
+        /* add search bar item */
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Search", style: .plain, target: self, action: #selector(showFilter))
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,9 +36,17 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    func showFilter() {
+        
+        /* present Filter View Controller*/
+        performSegue(withIdentifier: "restaurantToFilter", sender: self)
+        
+    }
+    
+    
     // MARK: - Brownie Table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

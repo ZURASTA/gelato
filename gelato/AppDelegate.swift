@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /* disable navigation bar border*/
         UINavigationBar.appearance().shadowImage = UIImage()
         UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        
+        UINavigationBar.appearance().tintColor = UIColor.black
         
         return true
     }

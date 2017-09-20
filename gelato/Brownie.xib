@@ -44,7 +44,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Biscuit" translatesAutoresizingMaskIntoConstraints="NO" id="W1F-Zb-kiz">
-                    <rect key="frame" x="187" y="0.0" width="178" height="150"/>
+                    <rect key="frame" x="187" y="5" width="178" height="150"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
             </subviews>
