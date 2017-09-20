@@ -64,7 +64,7 @@ class MainViewController: UIViewController, SushiProtocol{
     func didTapBiscuit(sender: Any, bID: Int, rID: Int) {
         self.bID = bID
         self.rID = rID
-        performSegue(withIdentifier: "biscuitToRestaurant", sender: sender)
+        performSegue(withIdentifier: "biscuitToRestaurant2", sender: sender)
     }
     
     // MARK: - Custom Segue

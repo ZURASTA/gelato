@@ -127,6 +127,7 @@
                         <outlet property="contentView" destination="2Om-DV-S2c" id="rMH-B5-Vv4"/>
                         <outlet property="titleItem" destination="4Gu-LG-lWB" id="3pD-19-i2z"/>
                         <segue destination="vEe-XP-Ifa" kind="show" identifier="biscuitToRestaurant" id="Vqp-XR-kRM"/>
+                        <segue destination="hND-DZ-6wu" kind="show" identifier="biscuitToRestaurant2" id="cum-mh-Of3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkB-sS-A8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,6 +180,84 @@
             </objects>
             <point key="canvasLocation" x="3132" y="263"/>
         </scene>
+        <!--Restaurant View Controller2-->
+        <scene sceneID="azm-by-RzA">
+            <objects>
+                <viewController id="hND-DZ-6wu" customClass="RestaurantViewController2" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x2Y-F0-EUG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dg7-Ny-9pB">
+                                <rect key="frame" x="0.0" y="146" width="375" height="632"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xpa-y4-Cyj">
+                                    <size key="itemSize" width="172" height="215"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Fudge" id="gKx-Ai-gR1" customClass="Fudge" customModule="gelato" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="10" width="172" height="215"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="172" height="215"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                        <size key="customSize" width="172" height="215"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="hND-DZ-6wu" id="V4P-EE-ucW"/>
+                                    <outlet property="delegate" destination="hND-DZ-6wu" id="0Pc-Zt-WGC"/>
+                                </connections>
+                            </collectionView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rqs-in-l9n">
+                                <rect key="frame" x="0.0" y="88" width="375" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsm-C6-fPV" userLabel="Menu View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="375" id="n55-7b-uLh"/>
+                                            <constraint firstAttribute="height" constant="50" id="rbh-GF-hJj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zsm-C6-fPV" firstAttribute="top" secondItem="Rqs-in-l9n" secondAttribute="top" id="AHG-Vl-QcI"/>
+                                    <constraint firstAttribute="trailing" secondItem="zsm-C6-fPV" secondAttribute="trailing" id="U8D-sC-vJY"/>
+                                    <constraint firstAttribute="bottom" secondItem="zsm-C6-fPV" secondAttribute="bottom" id="W04-o3-UtJ"/>
+                                    <constraint firstItem="zsm-C6-fPV" firstAttribute="centerY" secondItem="Rqs-in-l9n" secondAttribute="centerY" id="Zm3-O3-5Dj"/>
+                                    <constraint firstItem="zsm-C6-fPV" firstAttribute="leading" secondItem="Rqs-in-l9n" secondAttribute="leading" id="iBl-Hs-Hdi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FC7-y9-ffj" firstAttribute="trailing" secondItem="Rqs-in-l9n" secondAttribute="trailing" id="2WU-iO-qDC"/>
+                            <constraint firstItem="Rqs-in-l9n" firstAttribute="leading" secondItem="FC7-y9-ffj" secondAttribute="leading" id="C12-WY-boU"/>
+                            <constraint firstItem="Rqs-in-l9n" firstAttribute="top" secondItem="FC7-y9-ffj" secondAttribute="top" id="Iui-Aj-G9q"/>
+                            <constraint firstItem="FC7-y9-ffj" firstAttribute="trailing" secondItem="dg7-Ny-9pB" secondAttribute="trailing" id="Tzv-MB-Iwy"/>
+                            <constraint firstItem="FC7-y9-ffj" firstAttribute="bottom" secondItem="dg7-Ny-9pB" secondAttribute="bottom" id="UiV-Gk-c4I"/>
+                            <constraint firstItem="dg7-Ny-9pB" firstAttribute="top" secondItem="FC7-y9-ffj" secondAttribute="top" constant="58" id="fJG-AC-b0Q"/>
+                            <constraint firstItem="dg7-Ny-9pB" firstAttribute="leading" secondItem="FC7-y9-ffj" secondAttribute="leading" id="jOk-uh-zes"/>
+                            <constraint firstItem="FC7-y9-ffj" firstAttribute="bottom" secondItem="Rqs-in-l9n" secondAttribute="bottom" constant="640" id="pwq-hO-egF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FC7-y9-ffj"/>
+                    </view>
+                    <connections>
+                        <outlet property="fudgesView" destination="dg7-Ny-9pB" id="caM-4D-uLM"/>
+                        <outlet property="menuView" destination="zsm-C6-fPV" id="2DH-nT-zY9"/>
+                        <outlet property="menuViewWidthConstraint" destination="n55-7b-uLh" id="NRG-Qh-vUA"/>
+                        <segue destination="khR-1U-sq1" kind="presentation" identifier="restaurantToMeal2" id="hU6-A4-dO0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fF-nm-r1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3132" y="1010"/>
+        </scene>
         <!--Meal View Controller-->
         <scene sceneID="RkX-GW-jD8">
             <objects>
@@ -187,19 +266,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Biscuit" translatesAutoresizingMaskIntoConstraints="NO" id="IPE-Hw-8af">
-                                <rect key="frame" x="0.0" y="44" width="375" height="258"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beetroot Sandwich" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwy-yp-9or">
-                                <rect key="frame" x="16" y="310" width="327" height="52"/>
+                                <rect key="frame" x="16" y="358" width="327" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fresh beetroot sandwiched in brown topped along with fresh cucmber, beetroot and loads of feta cheese" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YI1-h7-gKc">
-                                <rect key="frame" x="16" y="380" width="343" height="114"/>
+                                <rect key="frame" x="16" y="398" width="343" height="114"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
@@ -224,8 +299,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Close">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="dismissView:" destination="khR-1U-sq1" eventType="touchUpInside" id="QPV-Na-3iT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUZ-jB-R0B">
                                 <rect key="frame" x="16" y="728" width="343" height="50"/>
@@ -236,6 +314,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Biscuit" translatesAutoresizingMaskIntoConstraints="NO" id="IPE-Hw-8af">
+                                <rect key="frame" x="49" y="105" width="277" height="236"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="uQy-yc-4zw"/>
@@ -325,6 +407,7 @@
         <image name="Biscuit" width="150" height="125"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oVu-0W-UOL"/>
+        <segue reference="v3b-g9-Fru"/>
+        <segue reference="hU6-A4-dO0"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -15,6 +15,8 @@
 		20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA51F70CA5E0008D557 /* MealViewController.swift */; };
 		20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA71F70CA6D0008D557 /* PaymentViewController.swift */; };
 		20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA91F70CA770008D557 /* TrackingViewController.swift */; };
+		20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2BF041F720EF600553BD4 /* Fudge.swift */; };
+		20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20A2BF051F720EF600553BD4 /* Fudge.xib */; };
 		20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A963701F6D1DAB00F528F4 /* Main.storyboard */; };
 		20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A51F5F967700C1FEEF /* AppDelegate.swift */; };
 		20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A71F5F967700C1FEEF /* MainViewController.swift */; };
@@ -25,6 +27,7 @@
 		20B276C91F5F967700C1FEEF /* gelatoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276C81F5F967700C1FEEF /* gelatoUITests.swift */; };
 		20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276D61F5FA95400C1FEEF /* Biscuit.swift */; };
 		20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B276D81F5FA99100C1FEEF /* Biscuit.xib */; };
+		20CB03D81F721E17004767C4 /* RestaurantViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB03D71F721E17004767C4 /* RestaurantViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,8 @@
 		20712AA51F70CA5E0008D557 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		20712AA71F70CA6D0008D557 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		20712AA91F70CA770008D557 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		20A2BF041F720EF600553BD4 /* Fudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fudge.swift; sourceTree = "<group>"; };
+		20A2BF051F720EF600553BD4 /* Fudge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Fudge.xib; sourceTree = "<group>"; };
 		20A963711F6D1DAB00F528F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20B276A21F5F967700C1FEEF /* gelato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gelato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B276A51F5F967700C1FEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +74,7 @@
 		20B276CA1F5F967700C1FEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20B276D61F5FA95400C1FEEF /* Biscuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biscuit.swift; sourceTree = "<group>"; };
 		20B276D81F5FA99100C1FEEF /* Biscuit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Biscuit.xib; sourceTree = "<group>"; };
+		20CB03D71F721E17004767C4 /* RestaurantViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
 				20712AA11F70C7340008D557 /* FilterViewController.swift */,
 				20712AA31F70CA1F0008D557 /* RestaurantViewController.swift */,
+				20CB03D71F721E17004767C4 /* RestaurantViewController2.swift */,
 				20712AA51F70CA5E0008D557 /* MealViewController.swift */,
 				20712AA71F70CA6D0008D557 /* PaymentViewController.swift */,
 				20712AA91F70CA770008D557 /* TrackingViewController.swift */,
@@ -170,6 +177,8 @@
 				2060D58C1F7106D400B5490F /* Brownie.swift */,
 				2060D58A1F71067B00B5490F /* Brownie.xib */,
 				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
+				20A2BF041F720EF600553BD4 /* Fudge.swift */,
+				20A2BF051F720EF600553BD4 /* Fudge.xib */,
 			);
 			name = "UI Component";
 			sourceTree = "<group>";
@@ -242,15 +251,18 @@
 				TargetAttributes = {
 					20B276A11F5F967700C1FEEF = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					20B276B81F5F967700C1FEEF = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 20B276A11F5F967700C1FEEF;
 					};
 					20B276C31F5F967700C1FEEF = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 20B276A11F5F967700C1FEEF;
 					};
@@ -284,6 +296,7 @@
 				20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */,
 				2060D58B1F71067B00B5490F /* Brownie.xib in Resources */,
 				20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */,
+				20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */,
 				20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */,
 				20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */,
 			);
@@ -312,6 +325,7 @@
 			files = (
 				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
 				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
+				20CB03D81F721E17004767C4 /* RestaurantViewController2.swift in Sources */,
 				20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */,
 				20712AA41F70CA1F0008D557 /* RestaurantViewController.swift in Sources */,
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
@@ -319,6 +333,7 @@
 				20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */,
 				2060D58D1F7106D400B5490F /* Brownie.swift in Sources */,
 				200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */,
+				20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */,
 				20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */,
 				20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */,
 			);
@@ -491,7 +506,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -504,7 +520,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -517,7 +534,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelatoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gelato.app/gelato";
 			};
 			name = Debug;
@@ -531,7 +549,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelatoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/gelato.app/gelato";
 			};
 			name = Release;
@@ -544,7 +563,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelatoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = gelato;
 			};
 			name = Debug;
@@ -557,7 +577,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelatoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = gelato;
 			};
 			name = Release;

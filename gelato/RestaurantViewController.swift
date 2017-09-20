@@ -36,7 +36,7 @@ class RestaurantViewController: UIViewController, UITableViewDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
-    func showFilter() {
+    @objc func showFilter() {
         
         /* present Filter View Controller*/
         performSegue(withIdentifier: "restaurantToFilter", sender: self)
