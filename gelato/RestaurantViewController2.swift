@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RestaurantViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class RestaurantViewController2: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var fudgesView: UICollectionView!
     
@@ -22,6 +22,16 @@ class RestaurantViewController2: UIViewController, UICollectionViewDelegate, UIC
         // Do any additional setup after loading the view.
         
         setupMenuButtons()
+        
+        let numberOfCell = 2
+        let inset = CGFloat(((Int(UIScreen.main.bounds.width) - (172 * numberOfCell)))/3)
+        if let layout = fudgesView.collectionViewLayout as? UICollectionViewFlowLayout {
+            layout.itemSize = CGSize(width: 172, height: 215)
+            layout.minimumLineSpacing = 10
+            layout.minimumInteritemSpacing = 10
+            layout.sectionInset = UIEdgeInsets(top: 10, left: inset, bottom: 10, right: inset)
+            layout.invalidateLayout()
+        }
         
     }
 
@@ -46,7 +56,7 @@ class RestaurantViewController2: UIViewController, UICollectionViewDelegate, UIC
         performSegue(withIdentifier: "restaurantToMeal2", sender: self)
         
     }
-
+    
     private func setupMenuButtons(){
         
         
