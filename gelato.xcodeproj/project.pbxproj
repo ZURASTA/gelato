@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */; };
+		2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */; };
+		2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBF1F96CAEB0077FEDF /* Waffle.swift */; };
 		2060D58B1F71067B00B5490F /* Brownie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2060D58A1F71067B00B5490F /* Brownie.xib */; };
 		2060D58D1F7106D400B5490F /* Brownie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060D58C1F7106D400B5490F /* Brownie.swift */; };
 		20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA11F70C7340008D557 /* FilterViewController.swift */; };
@@ -49,6 +51,8 @@
 
 /* Begin PBXFileReference section */
 		200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiRoll.swift; sourceTree = "<group>"; };
+		2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
+		2052ACBF1F96CAEB0077FEDF /* Waffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waffle.swift; sourceTree = "<group>"; };
 		2060D58A1F71067B00B5490F /* Brownie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Brownie.xib; sourceTree = "<group>"; };
 		2060D58C1F7106D400B5490F /* Brownie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brownie.swift; sourceTree = "<group>"; };
 		20712AA11F70C7340008D557 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
 				20A2BF041F720EF600553BD4 /* Fudge.swift */,
 				20A2BF051F720EF600553BD4 /* Fudge.xib */,
+				2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */,
+				2052ACBF1F96CAEB0077FEDF /* Waffle.swift */,
 			);
 			name = "UI Component";
 			sourceTree = "<group>";
@@ -327,6 +333,8 @@
 				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
 				20CB03D81F721E17004767C4 /* RestaurantViewController2.swift in Sources */,
 				20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */,
+				2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */,
+				2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */,
 				20712AA41F70CA1F0008D557 /* RestaurantViewController.swift in Sources */,
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
 				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,

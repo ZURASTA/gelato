@@ -15,7 +15,7 @@ protocol SushiProtocol: class {
     
     var sushiSize = 3
     let sushiWidth = 172
-    let sushiHeight = 215
+    let sushiHeight = 251
     var biscuits = [Biscuit]()
     weak var sushiDelegate: SushiProtocol?
     
