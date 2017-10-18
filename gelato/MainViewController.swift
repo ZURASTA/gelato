@@ -16,7 +16,7 @@ class MainViewController: UIViewController, SushiProtocol{
     @IBOutlet weak var contentHeightConstraint: NSLayoutConstraint!
     
     var rows = 3
-    let rowHeight = 290
+    let rowHeight = 322
     var sushi = [SushiRoll]()
     /* sushiRoll tag is 10, 11, 12 */
     var sushiTag = 10
