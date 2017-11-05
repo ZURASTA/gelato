@@ -1,5 +1,6 @@
 //
 //  Waffle.swift
+//  A round textbox used to show description
 //  gelato
 //
 //  Created by EvanTsai on 2017/10/18.

@@ -1,5 +1,6 @@
 //
 //  Cupcake.swift
+//  A round button used for indicating rating
 //  gelato
 //
 //  Created by EvanTsai on 2017/10/18.

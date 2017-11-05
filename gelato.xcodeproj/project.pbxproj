@@ -31,6 +31,7 @@
 		20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276D61F5FA95400C1FEEF /* Biscuit.swift */; };
 		20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B276D81F5FA99100C1FEEF /* Biscuit.xib */; };
 		20CB03D81F721E17004767C4 /* RestaurantViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB03D71F721E17004767C4 /* RestaurantViewController2.swift */; };
+		20DAE8C81FAF03A600005461 /* Cheesecake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DAE8C71FAF03A600005461 /* Cheesecake.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		20B276D61F5FA95400C1FEEF /* Biscuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Biscuit.swift; sourceTree = "<group>"; };
 		20B276D81F5FA99100C1FEEF /* Biscuit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Biscuit.xib; sourceTree = "<group>"; };
 		20CB03D71F721E17004767C4 /* RestaurantViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController2.swift; sourceTree = "<group>"; };
+		20DAE8C71FAF03A600005461 /* Cheesecake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheesecake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 				20A2BF051F720EF600553BD4 /* Fudge.xib */,
 				2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */,
 				2052ACBF1F96CAEB0077FEDF /* Waffle.swift */,
+				20DAE8C71FAF03A600005461 /* Cheesecake.swift */,
 				20AD60051F9730650052DD9E /* MMSlidingButton.swift */,
 			);
 			name = "UI Component";
@@ -344,6 +347,7 @@
 				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,
 				20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */,
 				2060D58D1F7106D400B5490F /* Brownie.swift in Sources */,
+				20DAE8C81FAF03A600005461 /* Cheesecake.swift in Sources */,
 				200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */,
 				20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */,
 				20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */,
