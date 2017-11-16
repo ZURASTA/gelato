@@ -7,12 +7,19 @@
 //
 
 import UIKit
-
-@IBDesignable class SushiRoll: UIScrollView {
+protocol SushiProtocol: class {
+    // protocol definition goes here
+    func didTapBiscuit(sender: Any, bID: Int, rID: Int)
+}
+@IBDesignable class SushiRoll: UIScrollView, BiscuitProtocol {
     
     var sushiSize = 3
     let sushiWidth = 172
-    let sushiHeight = 215
+    let sushiHeight = 251
+    var biscuits = [Biscuit]()
+    weak var sushiDelegate: SushiProtocol?
+    
+    var biscuitTag = 0
     
     // MARK: - Initializers
     
@@ -30,9 +37,17 @@ import UIKit
         for _ in 0..<sushiSize {
             // Create the button
             let biscuit = Biscuit()
-            biscuit.backgroundColor = UIColor.red
-            // Add the button to the stack
+            biscuit.delegate = self
+            
+            //TODO: Populate data into Biscuit
+            biscuit.biscuitID = biscuitTag
+            biscuit.restaurantID = biscuitTag
+            biscuitTag += 1
+            
+            
             view.addArrangedSubview(biscuit)
+            biscuits.append(biscuit)
+            
         }
     }
     
@@ -54,6 +69,11 @@ import UIKit
         self.addConstraint(NSLayoutConstraint(item: stackView, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1.0, constant: 0.0))
         self.addConstraint(NSLayoutConstraint(item: stackView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: stackView.frame.width))
         
+    }
+    
+    // MARK: - Biscuit Delegate
+    func didTap(sender: Any, bID: Int, rID: Int) {
+        sushiDelegate?.didTapBiscuit(sender: sender, bID: bID, rID: rID)
     }
     
     /*
