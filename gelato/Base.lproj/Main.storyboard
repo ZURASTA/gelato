@@ -38,45 +38,45 @@
                                 </constraints>
                             </scrollView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mtt-wh-Z2j">
-                                <rect key="frame" x="0.0" y="138" width="375" height="640"/>
+                                <rect key="frame" x="0.0" y="148" width="375" height="630"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Om-DV-S2c" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VEGAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-wc-tFs">
-                                                <rect key="frame" x="10.333333333333336" y="15" width="67" height="24"/>
+                                                <rect key="frame" x="10.666666666666664" y="0.0" width="67" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sandwiches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwV-Xv-7yR">
+                                                <rect key="frame" x="10" y="312" width="106" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWY-Jk-vSR">
-                                                <rect key="frame" x="10" y="619" width="67.666666666666671" height="24"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <scrollView opaque="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJt-jc-0Qd" customClass="SushiRoll" customModule="gelato" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="354" width="365" height="251"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="251" id="AcC-Qa-k2A"/>
-                                                </constraints>
-                                            </scrollView>
-                                            <scrollView opaque="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-ND-8A6" customClass="SushiRoll" customModule="gelato" customModuleProvider="target">
-                                                <rect key="frame" x="10" y="664" width="365" height="251"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="251" id="1LS-BU-dDT"/>
-                                                </constraints>
-                                            </scrollView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sandwiches" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OwV-Xv-7yR">
-                                                <rect key="frame" x="10" y="322" width="106" height="24"/>
+                                                <rect key="frame" x="10" y="609" width="67.666666666666671" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <scrollView opaque="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPv-Ih-d1C" customClass="SushiRoll" customModule="gelato" customModuleProvider="target">
-                                                <rect key="frame" x="8" y="54" width="365" height="251"/>
+                                                <rect key="frame" x="8" y="44" width="365" height="251"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="251" id="DUy-W6-GSR"/>
+                                                </constraints>
+                                            </scrollView>
+                                            <scrollView opaque="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJt-jc-0Qd" customClass="SushiRoll" customModule="gelato" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="344" width="365" height="251"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="251" id="AcC-Qa-k2A"/>
+                                                </constraints>
+                                            </scrollView>
+                                            <scrollView opaque="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vd-ND-8A6" customClass="SushiRoll" customModule="gelato" customModuleProvider="target">
+                                                <rect key="frame" x="10" y="654" width="365" height="251"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="251" id="1LS-BU-dDT"/>
                                                 </constraints>
                                             </scrollView>
                                         </subviews>
@@ -86,16 +86,16 @@
                                             <constraint firstAttribute="height" constant="1500" id="9LV-FR-bs8"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OwV-Xv-7yR" secondAttribute="trailing" id="9gP-vo-x1J"/>
                                             <constraint firstItem="2vd-ND-8A6" firstAttribute="leading" secondItem="2Om-DV-S2c" secondAttribute="leading" constant="10" id="JuJ-gm-l9r"/>
-                                            <constraint firstItem="oGY-wc-tFs" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="15" id="OYl-U5-WwH"/>
+                                            <constraint firstItem="oGY-wc-tFs" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" id="OYl-U5-WwH"/>
                                             <constraint firstAttribute="width" constant="375" id="PC2-J2-fwe"/>
                                             <constraint firstItem="hPv-Ih-d1C" firstAttribute="leading" secondItem="2Om-DV-S2c" secondAttribute="leading" constant="8" id="Q7M-03-9m9"/>
-                                            <constraint firstItem="uJt-jc-0Qd" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="354" id="Rcy-k9-HuA"/>
-                                            <constraint firstItem="hPv-Ih-d1C" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="54" id="SZk-aH-lXQ"/>
+                                            <constraint firstItem="uJt-jc-0Qd" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="344" id="Rcy-k9-HuA"/>
+                                            <constraint firstItem="hPv-Ih-d1C" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="44" id="SZk-aH-lXQ"/>
                                             <constraint firstItem="rWY-Jk-vSR" firstAttribute="leading" secondItem="2Om-DV-S2c" secondAttribute="leading" constant="10" id="VQt-sz-Rft"/>
                                             <constraint firstAttribute="trailing" secondItem="uJt-jc-0Qd" secondAttribute="trailing" constant="2" id="XhP-rb-J6U"/>
                                             <constraint firstItem="oGY-wc-tFs" firstAttribute="leading" secondItem="2Om-DV-S2c" secondAttribute="leading" constant="10" id="Zib-uI-AiF"/>
-                                            <constraint firstItem="2vd-ND-8A6" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="664" id="cmy-dc-Xng"/>
-                                            <constraint firstItem="OwV-Xv-7yR" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="322" id="jIY-0w-uo0"/>
+                                            <constraint firstItem="2vd-ND-8A6" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="654" id="cmy-dc-Xng"/>
+                                            <constraint firstItem="OwV-Xv-7yR" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="312" id="jIY-0w-uo0"/>
                                             <constraint firstItem="uJt-jc-0Qd" firstAttribute="leading" secondItem="2Om-DV-S2c" secondAttribute="leading" constant="8" id="m2D-JU-Tlc"/>
                                             <constraint firstAttribute="trailing" secondItem="2vd-ND-8A6" secondAttribute="trailing" id="ol7-0w-fWh"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oGY-wc-tFs" secondAttribute="trailing" id="seM-kS-22r"/>
@@ -117,9 +117,9 @@
                             <constraint firstItem="Mtt-wh-Z2j" firstAttribute="leading" secondItem="ckN-4f-v8G" secondAttribute="leading" id="7yR-aa-cQN"/>
                             <constraint firstItem="ckN-4f-v8G" firstAttribute="trailing" secondItem="bYL-9G-d5K" secondAttribute="trailing" id="DbB-qo-RDJ"/>
                             <constraint firstItem="bYL-9G-d5K" firstAttribute="top" secondItem="ckN-4f-v8G" secondAttribute="top" id="K3C-HP-BBT"/>
-                            <constraint firstItem="rWY-Jk-vSR" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="619" id="UDX-hJ-BdZ"/>
+                            <constraint firstItem="rWY-Jk-vSR" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="609" id="UDX-hJ-BdZ"/>
                             <constraint firstItem="ckN-4f-v8G" firstAttribute="trailing" secondItem="Mtt-wh-Z2j" secondAttribute="trailing" id="ViI-Vz-PBP"/>
-                            <constraint firstItem="Mtt-wh-Z2j" firstAttribute="top" secondItem="ckN-4f-v8G" secondAttribute="top" constant="50" id="g5f-kl-OJr"/>
+                            <constraint firstItem="Mtt-wh-Z2j" firstAttribute="top" secondItem="ckN-4f-v8G" secondAttribute="top" constant="60" id="g5f-kl-OJr"/>
                             <constraint firstItem="bYL-9G-d5K" firstAttribute="leading" secondItem="ckN-4f-v8G" secondAttribute="leading" id="nw0-3l-6TL"/>
                             <constraint firstItem="ckN-4f-v8G" firstAttribute="bottom" secondItem="Mtt-wh-Z2j" secondAttribute="bottom" id="yGE-VK-Gtl"/>
                         </constraints>
@@ -150,8 +150,7 @@
                         <outlet property="menuView" destination="iPZ-ik-d59" id="g3i-Ds-oxg"/>
                         <outlet property="menuViewWidthConstraint" destination="OZr-bf-1PU" id="CLz-it-4Uq"/>
                         <outlet property="titleItem" destination="4Gu-LG-lWB" id="3pD-19-i2z"/>
-                        <segue destination="vEe-XP-Ifa" kind="show" identifier="biscuitToRestaurant" id="Vqp-XR-kRM"/>
-                        <segue destination="hND-DZ-6wu" kind="show" identifier="biscuitToRestaurant2" id="cum-mh-Of3"/>
+                        <segue destination="hND-DZ-6wu" kind="show" identifier="biscuitToRestaurant" id="cum-mh-Of3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkB-sS-A8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -159,55 +158,9 @@
             <point key="canvasLocation" x="2226.4000000000001" y="263.05418719211826"/>
         </scene>
         <!--Restaurant View Controller-->
-        <scene sceneID="WVf-pd-Tux">
-            <objects>
-                <viewController id="vEe-XP-Ifa" customClass="RestaurantViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="3sw-6e-sgO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x7E-pc-Fr0">
-                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Brownie" rowHeight="170" id="FOw-8o-anf" customClass="Brownie" customModule="gelato" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="170"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FOw-8o-anf" id="vMo-mc-7jw">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="169.66666666666666"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="vEe-XP-Ifa" id="CgA-BQ-Tw1"/>
-                                    <outlet property="delegate" destination="vEe-XP-Ifa" id="5SM-hH-GSd"/>
-                                </connections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="V0u-nF-yaW" firstAttribute="bottom" secondItem="x7E-pc-Fr0" secondAttribute="bottom" id="B9I-ad-Jps"/>
-                            <constraint firstItem="x7E-pc-Fr0" firstAttribute="top" secondItem="V0u-nF-yaW" secondAttribute="top" id="Dib-qJ-1Mn"/>
-                            <constraint firstItem="x7E-pc-Fr0" firstAttribute="leading" secondItem="V0u-nF-yaW" secondAttribute="leading" id="eeS-Em-G1P"/>
-                            <constraint firstItem="V0u-nF-yaW" firstAttribute="trailing" secondItem="x7E-pc-Fr0" secondAttribute="trailing" id="hqm-BA-deU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="V0u-nF-yaW"/>
-                    </view>
-                    <connections>
-                        <outlet property="brownieTable" destination="x7E-pc-Fr0" id="Jhm-OT-lxD"/>
-                        <segue destination="66B-GI-Ttj" kind="show" identifier="restaurantToFilter" id="oVu-0W-UOL"/>
-                        <segue destination="khR-1U-sq1" kind="presentation" identifier="restaurantToMeal" id="pgG-lR-FUV"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BU9-Lh-jGL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3132" y="263"/>
-        </scene>
-        <!--Restaurant View Controller2-->
         <scene sceneID="azm-by-RzA">
             <objects>
-                <viewController id="hND-DZ-6wu" customClass="RestaurantViewController2" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hND-DZ-6wu" customClass="RestaurantViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x2Y-F0-EUG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -278,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fF-nm-r1X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3132" y="1010"/>
+            <point key="canvasLocation" x="3103" y="263"/>
         </scene>
         <!--Meal View Controller-->
         <scene sceneID="RkX-GW-jD8">
@@ -467,7 +420,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxO-O8-SaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3958" y="-485"/>
+            <point key="canvasLocation" x="3103" y="-474"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qA2-2B-60U">
@@ -492,8 +445,4 @@
     <resources>
         <image name="Biscuit" width="150" height="125"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="v3b-g9-Fru"/>
-        <segue reference="hU6-A4-dO0"/>
-    </inferredMetricsTieBreakers>
 </document>

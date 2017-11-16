@@ -71,20 +71,20 @@ class MainViewController: UIViewController, SushiProtocol{
         /* initailise menu view content */
         let button0 = Cheesecake(frame: CGRect(x: 10, y: 0, width: 100, height: 50))
         button0.setTitle("Top Picks", for: .normal)
-        button0.setTitleColor(UIColor.black, for: .normal)
         button0.backgroundColor = UIColor.init(red: 255/255.0, green: 138/255.0, blue: 134/255.0, alpha: 1.0)
+        button0.setTitleColor(UIColor.white, for: .normal)
         let button1 = Cheesecake(frame: CGRect(x: 120, y: 0, width: 120, height: 50))
         button1.setTitle("Most Popular", for: .normal)
-        button1.setTitleColor(UIColor.black, for: .normal)
         button1.backgroundColor = UIColor.init(red: 50/255.0, green: 194/255.0, blue: 255/255.0, alpha: 1.0)
+        button1.setTitleColor(UIColor.white, for: .normal)
         let button2 = Cheesecake(frame: CGRect(x: 250, y: 0, width: 100, height: 50))
         button2.setTitle("Quick Bites", for: .normal)
-        button2.setTitleColor(UIColor.black, for: .normal)
         button2.backgroundColor = UIColor.init(red: 1/255.0, green: 242/255.0, blue: 210/255.0, alpha: 1.0)
+        button2.setTitleColor(UIColor.white, for: .normal)
         let button3 = Cheesecake(frame: CGRect(x: 360, y: 0, width: 100, height: 50))
         button3.setTitle("Healthy", for: .normal)
-        button3.setTitleColor(UIColor.black, for: .normal)
         button3.backgroundColor = UIColor.init(red: 250/255.0, green: 232/255.0, blue: 134/255.0, alpha: 1.0)
+        button3.setTitleColor(UIColor.white, for: .normal)
         
         
         menuView.addSubview(button0)
@@ -103,19 +103,8 @@ class MainViewController: UIViewController, SushiProtocol{
     func didTapBiscuit(sender: Any, bID: Int, rID: Int) {
         self.bID = bID
         self.rID = rID
-        performSegue(withIdentifier: "biscuitToRestaurant2", sender: sender)
+        performSegue(withIdentifier: "biscuitToRestaurant", sender: sender)
     }
-    
-    // MARK: - Custom Segue
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "biscuitToRestaurant" {
-            if let destinationVC = segue.destination as? RestaurantViewController  {
-                destinationVC.biscuitID = bID
-                destinationVC.restaurantID = rID
-            }
-        }
-    }
-    
     
 }
 
