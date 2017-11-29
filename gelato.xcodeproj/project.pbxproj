@@ -16,6 +16,9 @@
 		20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA51F70CA5E0008D557 /* MealViewController.swift */; };
 		20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA71F70CA6D0008D557 /* PaymentViewController.swift */; };
 		20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA91F70CA770008D557 /* TrackingViewController.swift */; };
+		207F77BD1FC41E8B004398B5 /* ingrediants.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BA1FC41E8B004398B5 /* ingrediants.txt */; };
+		207F77BE1FC41E8B004398B5 /* dishes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BB1FC41E8B004398B5 /* dishes.txt */; };
+		207F77BF1FC41E8B004398B5 /* restaurants.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BC1FC41E8B004398B5 /* restaurants.txt */; };
 		20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2BF041F720EF600553BD4 /* Fudge.swift */; };
 		20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20A2BF051F720EF600553BD4 /* Fudge.xib */; };
 		20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A963701F6D1DAB00F528F4 /* Main.storyboard */; };
@@ -60,6 +63,9 @@
 		20712AA51F70CA5E0008D557 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		20712AA71F70CA6D0008D557 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		20712AA91F70CA770008D557 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		207F77BA1FC41E8B004398B5 /* ingrediants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ingrediants.txt; sourceTree = "<group>"; };
+		207F77BB1FC41E8B004398B5 /* dishes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dishes.txt; sourceTree = "<group>"; };
+		207F77BC1FC41E8B004398B5 /* restaurants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = restaurants.txt; sourceTree = "<group>"; };
 		20A2BF041F720EF600553BD4 /* Fudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fudge.swift; sourceTree = "<group>"; };
 		20A2BF051F720EF600553BD4 /* Fudge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Fudge.xib; sourceTree = "<group>"; };
 		20A963711F6D1DAB00F528F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +127,16 @@
 			name = "View Controller";
 			sourceTree = "<group>";
 		};
+		207F77B91FC41DF8004398B5 /* Dummy data */ = {
+			isa = PBXGroup;
+			children = (
+				207F77BB1FC41E8B004398B5 /* dishes.txt */,
+				207F77BA1FC41E8B004398B5 /* ingrediants.txt */,
+				207F77BC1FC41E8B004398B5 /* restaurants.txt */,
+			);
+			path = "Dummy data";
+			sourceTree = "<group>";
+		};
 		20B276991F5F967700C1FEEF = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +160,7 @@
 		20B276A41F5F967700C1FEEF /* gelato */ = {
 			isa = PBXGroup;
 			children = (
+				207F77B91FC41DF8004398B5 /* Dummy data */,
 				20B276A51F5F967700C1FEEF /* AppDelegate.swift */,
 				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
 				20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */,
@@ -302,11 +319,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207F77BE1FC41E8B004398B5 /* dishes.txt in Resources */,
+				207F77BD1FC41E8B004398B5 /* ingrediants.txt in Resources */,
 				20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */,
 				2060D58B1F71067B00B5490F /* Brownie.xib in Resources */,
 				20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */,
 				20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */,
 				20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */,
+				207F77BF1FC41E8B004398B5 /* restaurants.txt in Resources */,
 				20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
