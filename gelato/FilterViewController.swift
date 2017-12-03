@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class FilterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchResultsUpdating, UISearchBarDelegate {
     

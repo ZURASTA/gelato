@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0305094DBBE79C7D70E5979A /* Pods_gelatoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19945B00C6FE26D42CE3D13B /* Pods_gelatoTests.framework */; };
 		200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */; };
+		203C753A1FD0049900932C88 /* SearchItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C75391FD0049900932C88 /* SearchItemModel.swift */; };
+		203C753D1FD014D400932C88 /* preloaded.realm in Resources */ = {isa = PBXBuildFile; fileRef = 203C753C1FD014D400932C88 /* preloaded.realm */; };
 		2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */; };
 		2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBF1F96CAEB0077FEDF /* Waffle.swift */; };
 		2060D58B1F71067B00B5490F /* Brownie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2060D58A1F71067B00B5490F /* Brownie.xib */; };
@@ -25,7 +28,6 @@
 		20AD60061F9730650052DD9E /* MMSlidingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AD60051F9730650052DD9E /* MMSlidingButton.swift */; };
 		20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A51F5F967700C1FEEF /* AppDelegate.swift */; };
 		20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276A71F5F967700C1FEEF /* MainViewController.swift */; };
-		20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */; };
 		20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20B276AF1F5F967700C1FEEF /* Assets.xcassets */; };
 		20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */; };
 		20B276BE1F5F967700C1FEEF /* gelatoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20B276BD1F5F967700C1FEEF /* gelatoTests.swift */; };
@@ -34,6 +36,8 @@
 		20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20B276D81F5FA99100C1FEEF /* Biscuit.xib */; };
 		20CB03D81F721E17004767C4 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB03D71F721E17004767C4 /* RestaurantViewController.swift */; };
 		20DAE8C81FAF03A600005461 /* Cheesecake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DAE8C71FAF03A600005461 /* Cheesecake.swift */; };
+		B1A925D4CC5FA506354C6124 /* Pods_gelatoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4E64E80457912F89745A8D /* Pods_gelatoUITests.framework */; };
+		F3BBB6DEB6F6F0FC958D8B49 /* Pods_gelato.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E23168E0A26196EED33D5FC /* Pods_gelato.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B1A31D7267A840E3114108A /* Pods-gelatoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gelatoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gelatoUITests/Pods-gelatoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0B4E64E80457912F89745A8D /* Pods_gelatoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gelatoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19945B00C6FE26D42CE3D13B /* Pods_gelatoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gelatoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BBE6C7D561A12DEE0F7F6D9 /* Pods-gelatoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gelatoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gelatoTests/Pods-gelatoTests.release.xcconfig"; sourceTree = "<group>"; };
 		200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiRoll.swift; sourceTree = "<group>"; };
+		203C75391FD0049900932C88 /* SearchItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItemModel.swift; sourceTree = "<group>"; };
+		203C753C1FD014D400932C88 /* preloaded.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = preloaded.realm; sourceTree = "<group>"; };
 		2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
 		2052ACBF1F96CAEB0077FEDF /* Waffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waffle.swift; sourceTree = "<group>"; };
 		2060D58A1F71067B00B5490F /* Brownie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Brownie.xib; sourceTree = "<group>"; };
@@ -73,7 +83,6 @@
 		20B276A21F5F967700C1FEEF /* gelato.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gelato.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20B276A51F5F967700C1FEEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20B276A71F5F967700C1FEEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		20B276AD1F5F967700C1FEEF /* gelato.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gelato.xcdatamodel; sourceTree = "<group>"; };
 		20B276AF1F5F967700C1FEEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20B276B21F5F967700C1FEEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20B276B41F5F967700C1FEEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +96,11 @@
 		20B276D81F5FA99100C1FEEF /* Biscuit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Biscuit.xib; sourceTree = "<group>"; };
 		20CB03D71F721E17004767C4 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		20DAE8C71FAF03A600005461 /* Cheesecake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cheesecake.swift; sourceTree = "<group>"; };
+		2E23168E0A26196EED33D5FC /* Pods_gelato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gelato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E6747E1E0192040875E297E /* Pods-gelato.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gelato.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gelato/Pods-gelato.debug.xcconfig"; sourceTree = "<group>"; };
+		AD595B98EFFFA40C81654688 /* Pods-gelato.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gelato.release.xcconfig"; path = "Pods/Target Support Files/Pods-gelato/Pods-gelato.release.xcconfig"; sourceTree = "<group>"; };
+		BBF4F9C12CF1E2C5852718C3 /* Pods-gelatoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gelatoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-gelatoTests/Pods-gelatoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D888AD57B8BD454AA94A4C91 /* Pods-gelatoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gelatoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-gelatoUITests/Pods-gelatoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3BBB6DEB6F6F0FC958D8B49 /* Pods_gelato.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0305094DBBE79C7D70E5979A /* Pods_gelatoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,12 +124,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1A925D4CC5FA506354C6124 /* Pods_gelatoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		203C753B1FD0052200932C88 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				203C75391FD0049900932C88 /* SearchItemModel.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		20712AAC1F70CACA0008D557 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +155,7 @@
 		207F77B91FC41DF8004398B5 /* Dummy data */ = {
 			isa = PBXGroup;
 			children = (
+				203C753C1FD014D400932C88 /* preloaded.realm */,
 				207F77BB1FC41E8B004398B5 /* dishes.txt */,
 				207F77BA1FC41E8B004398B5 /* ingrediants.txt */,
 				207F77BC1FC41E8B004398B5 /* restaurants.txt */,
@@ -144,6 +170,8 @@
 				20B276BC1F5F967700C1FEEF /* gelatoTests */,
 				20B276C71F5F967700C1FEEF /* gelatoUITests */,
 				20B276A31F5F967700C1FEEF /* Products */,
+				C57A4130AC11A51F54DD0555 /* Pods */,
+				32DD20685A0B3DF6F0A60E01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,10 +188,10 @@
 		20B276A41F5F967700C1FEEF /* gelato */ = {
 			isa = PBXGroup;
 			children = (
+				203C753B1FD0052200932C88 /* Data Model */,
 				207F77B91FC41DF8004398B5 /* Dummy data */,
 				20B276A51F5F967700C1FEEF /* AppDelegate.swift */,
 				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
-				20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */,
 				20B276B41F5F967700C1FEEF /* Info.plist */,
 				20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */,
 				20A963701F6D1DAB00F528F4 /* Main.storyboard */,
@@ -209,6 +237,29 @@
 			name = "UI Component";
 			sourceTree = "<group>";
 		};
+		32DD20685A0B3DF6F0A60E01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E23168E0A26196EED33D5FC /* Pods_gelato.framework */,
+				19945B00C6FE26D42CE3D13B /* Pods_gelatoTests.framework */,
+				0B4E64E80457912F89745A8D /* Pods_gelatoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C57A4130AC11A51F54DD0555 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E6747E1E0192040875E297E /* Pods-gelato.debug.xcconfig */,
+				AD595B98EFFFA40C81654688 /* Pods-gelato.release.xcconfig */,
+				BBF4F9C12CF1E2C5852718C3 /* Pods-gelatoTests.debug.xcconfig */,
+				1BBE6C7D561A12DEE0F7F6D9 /* Pods-gelatoTests.release.xcconfig */,
+				0B1A31D7267A840E3114108A /* Pods-gelatoUITests.debug.xcconfig */,
+				D888AD57B8BD454AA94A4C91 /* Pods-gelatoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -216,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20B276CD1F5F967700C1FEEF /* Build configuration list for PBXNativeTarget "gelato" */;
 			buildPhases = (
+				9EF273564043405362093D8A /* [CP] Check Pods Manifest.lock */,
 				20B2769E1F5F967700C1FEEF /* Sources */,
 				20B2769F1F5F967700C1FEEF /* Frameworks */,
 				20B276A01F5F967700C1FEEF /* Resources */,
+				DEB77E43AD59A3560D405A67 /* [CP] Embed Pods Frameworks */,
+				44F82309FCE1B3F90AED4E4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20B276D01F5F967700C1FEEF /* Build configuration list for PBXNativeTarget "gelatoTests" */;
 			buildPhases = (
+				5A8452F907F89C3BB28010B9 /* [CP] Check Pods Manifest.lock */,
 				20B276B51F5F967700C1FEEF /* Sources */,
 				20B276B61F5F967700C1FEEF /* Frameworks */,
 				20B276B71F5F967700C1FEEF /* Resources */,
+				8974B67A84647E49DB84F41F /* [CP] Embed Pods Frameworks */,
+				FE576D20304014A8C0FFAD57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,9 +308,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20B276D31F5F967700C1FEEF /* Build configuration list for PBXNativeTarget "gelatoUITests" */;
 			buildPhases = (
+				01157F8CF8D53758C2EB8292 /* [CP] Check Pods Manifest.lock */,
 				20B276C01F5F967700C1FEEF /* Sources */,
 				20B276C11F5F967700C1FEEF /* Frameworks */,
 				20B276C21F5F967700C1FEEF /* Resources */,
+				6EE35030A04AE75ABED62351 /* [CP] Embed Pods Frameworks */,
+				E4BC7C992E3997D519432BF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,6 +384,7 @@
 				20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */,
 				2060D58B1F71067B00B5490F /* Brownie.xib in Resources */,
 				20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */,
+				203C753D1FD014D400932C88 /* preloaded.realm in Resources */,
 				20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */,
 				20B276D91F5FA99100C1FEEF /* Biscuit.xib in Resources */,
 				207F77BF1FC41E8B004398B5 /* restaurants.txt in Resources */,
@@ -347,6 +408,158 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01157F8CF8D53758C2EB8292 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gelatoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44F82309FCE1B3F90AED4E4C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelato/Pods-gelato-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A8452F907F89C3BB28010B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gelatoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EE35030A04AE75ABED62351 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoUITests/Pods-gelatoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8974B67A84647E49DB84F41F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoTests/Pods-gelatoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF273564043405362093D8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gelato-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB77E43AD59A3560D405A67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-gelato/Pods-gelato-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelato/Pods-gelato-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BC7C992E3997D519432BF4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoUITests/Pods-gelatoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE576D20304014A8C0FFAD57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoTests/Pods-gelatoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20B2769E1F5F967700C1FEEF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -356,9 +569,9 @@
 				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
 				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
 				20CB03D81F721E17004767C4 /* RestaurantViewController.swift in Sources */,
-				20B276AE1F5F967700C1FEEF /* gelato.xcdatamodeld in Sources */,
 				2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */,
 				2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */,
+				203C753A1FD0049900932C88 /* SearchItemModel.swift in Sources */,
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
 				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,
 				20B276A61F5F967700C1FEEF /* AppDelegate.swift in Sources */,
@@ -531,6 +744,7 @@
 		};
 		20B276CE1F5F967700C1FEEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6747E1E0192040875E297E /* Pods-gelato.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HGBFNGZ46E;
@@ -545,6 +759,7 @@
 		};
 		20B276CF1F5F967700C1FEEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD595B98EFFFA40C81654688 /* Pods-gelato.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HGBFNGZ46E;
@@ -559,6 +774,7 @@
 		};
 		20B276D11F5F967700C1FEEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBF4F9C12CF1E2C5852718C3 /* Pods-gelatoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -574,6 +790,7 @@
 		};
 		20B276D21F5F967700C1FEEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBE6C7D561A12DEE0F7F6D9 /* Pods-gelatoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -589,6 +806,7 @@
 		};
 		20B276D41F5F967700C1FEEF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1A31D7267A840E3114108A /* Pods-gelatoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = gelatoUITests/Info.plist;
@@ -603,6 +821,7 @@
 		};
 		20B276D51F5F967700C1FEEF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D888AD57B8BD454AA94A4C91 /* Pods-gelatoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = gelatoUITests/Info.plist;
@@ -655,19 +874,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		20B276AC1F5F967700C1FEEF /* gelato.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				20B276AD1F5F967700C1FEEF /* gelato.xcdatamodel */,
-			);
-			currentVersion = 20B276AD1F5F967700C1FEEF /* gelato.xcdatamodel */;
-			path = gelato.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 20B2769A1F5F967700C1FEEF /* Project object */;
 }
