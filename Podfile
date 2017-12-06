@@ -6,7 +6,10 @@ target 'gelato' do
   use_frameworks!
 
   # Pods for gelato
-  pod 'RealmSwift'
+  pod "RxRealm"
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxDataSources'
   
   target 'gelatoTests' do
     inherit! :search_paths
