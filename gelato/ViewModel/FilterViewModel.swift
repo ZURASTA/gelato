@@ -65,33 +65,60 @@ extension MultipleSectionModel {
 
 class FilterViewModel: NSObject {
     
-    var sections: [MultipleSectionModel]?
+    var sections = Variable<[MultipleSectionModel]>([])
     
     let disposeBag = DisposeBag()
 
+    var searchBarText = Variable<String>("")
+    
+    var ingrediants: Results<Ingrediant>?
+    var restaurants: Results<Restaurant>?
+    var dishes: Results<Dish>?
+    
     override init(){
         super.init()
         
         let realm = try! Realm()
-        let ingrediants = realm.objects(Ingrediant.self)
-        let restaurants = realm.objects(Restaurant.self)
-        let dishes = realm.objects(Dish.self)
+
+        searchBarText
+            .asObservable()
+            .subscribe(onNext: { [weak self] keyword in
+                if(keyword.isEmpty){
+                    self?.ingrediants = realm.objects(Ingrediant.self)
+                    self?.restaurants = realm.objects(Restaurant.self)
+                    self?.dishes = realm.objects(Dish.self)
+                }
+                else{
+                    /* filter the items in sections */
+                    self?.ingrediants = realm.objects(Ingrediant.self).filter("name CONTAINS[c] '\(keyword)'")
+                    self?.restaurants = realm.objects(Restaurant.self).filter("name CONTAINS[c] '\(keyword)'")
+                    self?.dishes = realm.objects(Dish.self).filter("name CONTAINS[c] '\(keyword)'")
+                }
+                /* update sections */
+                self?.updateSection()
+            })
+            .disposed(by: disposeBag)
         
-        var ingrediantItems = [SectionItem]();
-        var restaurantItems = [SectionItem]();
-        var dishItems = [SectionItem]();
         
-        for ingrediant in ingrediants {
+    }
+    
+    func updateSection(){
+        
+        var ingrediantItems = [SectionItem]()
+        var restaurantItems = [SectionItem]()
+        var dishItems = [SectionItem]()
+        
+        for ingrediant in ingrediants! {
             ingrediantItems.append(SectionItem.IngrediantSectionItem(ingrediant: ingrediant))
         }
-        for restaurant in restaurants {
+        for restaurant in restaurants! {
             restaurantItems.append(SectionItem.RestaurantSectionItem(restaurant: restaurant))
         }
-        for dish in dishes {
+        for dish in dishes! {
             dishItems.append(SectionItem.DishSectionItem(dish: dish))
         }
         
-        sections = [
+        sections.value = [
             .DishSection(title: "Dish",
                          items: dishItems),
             .IngrediantSection(title: "Ingrediant",
@@ -101,4 +128,5 @@ class FilterViewModel: NSObject {
         ]
         
     }
+    
 }

@@ -33,6 +33,9 @@ class FilterViewController: UIViewController {
     
     let filterViewModel = FilterViewModel()
     
+    var sections = [MultipleSectionModel]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,12 +45,13 @@ class FilterViewController: UIViewController {
         
         let dataSource = FilterViewController.dataSource()
         
-        if let sections = filterViewModel.sections {
-            Observable.just(sections)
-                .bind(to: tableView.rx.items(dataSource: dataSource))
-                .disposed(by: disposeBag)
-        }
+        filterViewModel.sections
+            .asObservable()
+            .bind(to: tableView.rx.items(dataSource: dataSource))
+            .disposed(by: disposeBag)
 
+        configureSearchController()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,6 +60,40 @@ class FilterViewController: UIViewController {
     }
     
 }
+
+extension FilterViewController: UISearchResultsUpdating {
+    // MARK: - Search Controller
+    func configureSearchController() {
+        searchController = UISearchController(searchResultsController: nil)
+        searchController.searchResultsUpdater = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search here..."
+        searchController.searchBar.sizeToFit()
+        
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+            navigationItem.hidesSearchBarWhenScrolling = false
+        } else {
+            // Fallback on earlier versions
+            navigationItem.titleView = searchController?.searchBar
+        }
+        
+        searchController.searchBar
+            .rx.text
+            .orEmpty
+            .asObservable()
+            .bind(to: filterViewModel.searchBarText)
+            .disposed(by: disposeBag)
+        
+        
+        
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
+    }
+}
+
 
 extension FilterViewController {
     static func dataSource() -> RxTableViewSectionedReloadDataSource<MultipleSectionModel> {
