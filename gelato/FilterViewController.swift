@@ -16,25 +16,11 @@ class FilterViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var searchController: UISearchController!
     
-    var shouldShowSearchResults:Bool = false
-    
-    var dataArray1 = [String]()
-    var filteredArray1 = [String]()
-    
-    var dataArray2 = [String]()
-    var filteredArray2 = [String]()
-    
-    var dataArray3 = [String]()
-    var filteredArray3 = [String]()
-    
-    var sectionArray = ["Dishes", "Restaurants", "Ingrediants"]
-    
     let disposeBag = DisposeBag()
     
     let filterViewModel = FilterViewModel()
     
     var sections = [MultipleSectionModel]()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,11 +47,10 @@ class FilterViewController: UIViewController {
     
 }
 
-extension FilterViewController: UISearchResultsUpdating {
+extension FilterViewController {
     // MARK: - Search Controller
     func configureSearchController() {
         searchController = UISearchController(searchResultsController: nil)
-        searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search here..."
         searchController.searchBar.sizeToFit()
@@ -84,13 +69,6 @@ extension FilterViewController: UISearchResultsUpdating {
             .asObservable()
             .bind(to: filterViewModel.searchBarText)
             .disposed(by: disposeBag)
-        
-        
-        
-    }
-    
-    func updateSearchResults(for searchController: UISearchController) {
-        
     }
 }
 

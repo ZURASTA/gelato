@@ -61,27 +61,27 @@ class RestaurantViewController: UIViewController, UICollectionViewDelegate, UICo
         
         
         /* initailise menu view content */
-        let button0 = Cheesecake(frame: CGRect(x: 10, y: 0, width: 70, height: 50))
+        let button0 = Cheesecake(frame: CGRect(x: 10, y: 0, width: 100, height: 50))
         button0.setTitle("Entree", for: .normal)
         button0.backgroundColor = UIColor.init(red: 255/255.0, green: 138/255.0, blue: 134/255.0, alpha: 1.0)
         button0.setTitleColor(UIColor.white, for: .normal)
-        let button1 = Cheesecake(frame: CGRect(x: 90, y: 0, width: 100, height: 50))
-        button1.setTitle("Main Dishes", for: .normal)
+        let button1 = Cheesecake(frame: CGRect(x: 120, y: 0, width: 100, height: 50))
+        button1.setTitle("Main Dish", for: .normal)
         button1.backgroundColor = UIColor.init(red: 50/255.0, green: 194/255.0, blue: 255/255.0, alpha: 1.0)
         button1.setTitleColor(UIColor.white, for: .normal)
-        let button2 = Cheesecake(frame: CGRect(x: 200, y: 0, width: 50, height: 50))
+        let button2 = Cheesecake(frame: CGRect(x: 230, y: 0, width: 100, height: 50))
         button2.setTitle("Sides", for: .normal)
         button2.backgroundColor = UIColor.init(red: 1/255.0, green: 242/255.0, blue: 210/255.0, alpha: 1.0)
         button2.setTitleColor(UIColor.white, for: .normal)
-        let button3 = Cheesecake(frame: CGRect(x: 260, y: 0, width: 50, height: 50))
+        let button3 = Cheesecake(frame: CGRect(x: 340, y: 0, width: 100, height: 50))
         button3.setTitle("Kids", for: .normal)
         button3.backgroundColor = UIColor.init(red: 250/255.0, green: 232/255.0, blue: 134/255.0, alpha: 1.0)
         button3.setTitleColor(UIColor.white, for: .normal)
-        let button4 = Cheesecake(frame: CGRect(x: 320, y: 0, width: 70, height: 50))
+        let button4 = Cheesecake(frame: CGRect(x: 450, y: 0, width: 100, height: 50))
         button4.setTitle("Dessers", for: .normal)
         button4.backgroundColor = UIColor.init(red: 66/255.0, green: 197/255.0, blue: 264/255.0, alpha: 1.0)
         button4.setTitleColor(UIColor.white, for: .normal)
-        let button5 = Cheesecake(frame: CGRect(x: 400, y: 0, width: 70, height: 50))
+        let button5 = Cheesecake(frame: CGRect(x: 560, y: 0, width: 100, height: 50))
         button5.setTitle("Drinks", for: .normal)
         button5.backgroundColor = UIColor.init(red: 66/255.0, green: 244/255.0, blue: 209/255.0, alpha: 1.0)
         button5.setTitleColor(UIColor.white, for: .normal)
@@ -94,8 +94,8 @@ class RestaurantViewController: UIViewController, UICollectionViewDelegate, UICo
         menuView.addSubview(button5)
         
         /* update the frame of menu view*/
-        menuView.frame = CGRect(x: 0, y: 0, width: 480 , height: menuView.frame.height)
-        menuViewWidthConstraint.constant = 480
+        menuView.frame = CGRect(x: 0, y: 0, width: 660 , height: menuView.frame.height)
+        menuViewWidthConstraint.constant = 660
     }
     
     /*
