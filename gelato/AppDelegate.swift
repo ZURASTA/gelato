@@ -26,11 +26,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // copy over old data files for migration
         let defaultURL = Realm.Configuration.defaultConfiguration.fileURL!
         
+//        Realm.Configuration.defaultConfiguration.schemaVersion = 4
+        
         if let v0URL = Bundle.main.url(forResource: "preloaded", withExtension: "realm") {
             do {
-//                try FileManager.default.removeItem(at: defaultURL)
+                
+                try FileManager.default.removeItem(at: defaultURL)
+
                 try FileManager.default.copyItem(at: v0URL, to: defaultURL)
-            } catch {}
+                
+            } catch  {
+                print("error")
+            }
         }
         
         return true

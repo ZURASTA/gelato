@@ -9,6 +9,6 @@
 import Foundation
 import RealmSwift
 class Restaurant: Object {
-    @objc dynamic var name: String = "dummy restaurant"
-    @objc dynamic var rate: Float = 0.0
+    @objc dynamic var name: String = ""
+    @objc dynamic var rate: Float = 0
 }

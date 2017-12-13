@@ -27,7 +27,7 @@ enum SectionItem {
 extension MultipleSectionModel: SectionModelType {
     typealias Item = SectionItem
     
-    var items: [SectionItem] {
+    var items: [Item] {
         switch self {
         case .DishSection(title: _, items: let items):
             return items.map {$0}

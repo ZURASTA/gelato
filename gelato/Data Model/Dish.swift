@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 class Dish: Object {
-    @objc dynamic var name: String = "dummy burger"
-    @objc dynamic var price: Float = 0.0
+    @objc dynamic var name: String = ""
+    @objc dynamic var price: Float = 0
 }
 

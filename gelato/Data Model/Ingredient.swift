@@ -9,5 +9,5 @@
 import Foundation
 import RealmSwift
 class Ingrediant: Object {
-    @objc dynamic var name: String = "dummy chicken"
+    @objc dynamic var name: String = ""
 }
