@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 import Differentiator
-class CartItem: Object {
+class CartItem: Object  {
     @objc dynamic var id: Int = 0
     @objc dynamic var name: String = ""
     @objc dynamic var price: Float = 0
@@ -23,3 +23,24 @@ extension CartItem : IdentifiableType {
         return id
     }
 }
+//
+//protocol Copying {
+//    init(original: Self)
+//}
+//
+//extension Copying {
+//    func copy() -> Self {
+//        return Self.init(original: self)
+//    }
+//}
+//
+//extension Array where Element: Copying {
+//    func clone() -> Array {
+//        var copiedArray = Array<Element>()
+//        for element in self {
+//            copiedArray.append(element.copy())
+//        }
+//        return copiedArray
+//    }
+//}
+

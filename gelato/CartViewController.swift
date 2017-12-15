@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import RxDataSources
 import RxSwift
+import RealmSwift
 class CartViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -33,6 +34,8 @@ class CartViewController: UIViewController {
             .subscribe(onNext: { [unowned self] indexPath in
                 let section = self.cartViewModel.sections.value[indexPath.section]
                 var items = section.items
+                let item = items[indexPath.row]
+                self.cartViewModel.deletedItemID.onNext(item.id)
                 items.remove(at:indexPath.row)
                 self.cartViewModel.sections.value = [.init(original:section, items: items)]
             })

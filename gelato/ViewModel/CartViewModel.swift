@@ -35,6 +35,7 @@ class CartViewModel: NSObject {
     
     let disposeBag = DisposeBag()
     var sections = Variable<[CartSectionModel]>([])
+    var deletedItemID: PublishSubject<Int> = PublishSubject<Int>()
     
     override init(){
         super.init()
@@ -42,22 +43,33 @@ class CartViewModel: NSObject {
         let realm = try! Realm()
         
         let cartItems = realm.objects(CartItem.self)
+    
+        var cartArray: [CartItem] = []
         
-        self.sections.value = [.init(header: "Shopping List", items: cartItems.toArray())]
+        /*
+         deep copy,
+         otherwise RLMException:
+         Object has been deleted or invalidated.
+         */
+        cartItems.forEach { c in
+            let item = CartItem()
+            item.id = c.id
+            item.name = c.name
+            cartArray.append(item)
+        }
         
-//        Observable.array(from: cartItems)
-//            .map {[unowned self] array in
-//                self.sections.value = [.init(header: "Shopping List", items: array)]
-//            }
-//            .subscribe()
-//            .disposed(by: disposeBag)
+        self.sections.value = [.init(header: "Shopping List", items: cartArray)]
         
-//        sections.asObservable()
-//            .subscribe(onNext: { text in
-//                print("\(text)")
-//            })
-//            .disposed(by: disposeBag)
-        
+        deletedItemID.asObservable()
+            .subscribe(onNext: { [unowned self] itemID in
+                /* query object by id */
+                let items = realm.objects(CartItem.self).filter("id = \(itemID)")
+                /* delete from realm */
+                Observable.collection(from: items)
+                    .subscribe(Realm.rx.delete())
+                    .disposed(by: self.disposeBag)
+            })
+            .disposed(by: disposeBag)
         
     }
 }
