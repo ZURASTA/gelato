@@ -98,6 +98,10 @@ extension FilterViewController {
             titleForHeaderInSection: { dataSource, index in
                 let section = dataSource[index]
                 return section.title
+        },
+            canEditRowAtIndexPath: { _, _ in
+                
+                return true
         }
         )
     }

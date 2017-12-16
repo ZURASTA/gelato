@@ -15,7 +15,11 @@
 		201B38C31FD3D762004EB971 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B38C21FD3D762004EB971 /* Dish.swift */; };
 		201B38C51FD3D775004EB971 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B38C41FD3D775004EB971 /* Restaurant.swift */; };
 		201B38C71FD3D794004EB971 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B38C61FD3D794004EB971 /* Ingredient.swift */; };
+		202C0DFE1FDC105300703224 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C0DFD1FDC105300703224 /* CartViewModel.swift */; };
+		202C0E011FDC153500703224 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202C0E001FDC153500703224 /* CartItem.swift */; };
 		203C753D1FD014D400932C88 /* preloaded.realm in Resources */ = {isa = PBXBuildFile; fileRef = 203C753C1FD014D400932C88 /* preloaded.realm */; };
+		204E33721FDCAF0B00684C56 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E33711FDCAF0B00684C56 /* CartViewController.swift */; };
+		204E33751FDCB53200684C56 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204E33741FDCB53200684C56 /* CartTableViewCell.swift */; };
 		2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */; };
 		2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBF1F96CAEB0077FEDF /* Waffle.swift */; };
 		2060D58B1F71067B00B5490F /* Brownie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2060D58A1F71067B00B5490F /* Brownie.xib */; };
@@ -75,7 +79,11 @@
 		201B38C21FD3D762004EB971 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		201B38C41FD3D775004EB971 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		201B38C61FD3D794004EB971 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		202C0DFD1FDC105300703224 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		202C0E001FDC153500703224 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		203C753C1FD014D400932C88 /* preloaded.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = preloaded.realm; sourceTree = "<group>"; };
+		204E33711FDCAF0B00684C56 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		204E33741FDCB53200684C56 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cupcake.swift; sourceTree = "<group>"; };
 		2052ACBF1F96CAEB0077FEDF /* Waffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waffle.swift; sourceTree = "<group>"; };
 		2060D58A1F71067B00B5490F /* Brownie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Brownie.xib; sourceTree = "<group>"; };
@@ -149,6 +157,7 @@
 				201B38C61FD3D794004EB971 /* Ingredient.swift */,
 				201B38C41FD3D775004EB971 /* Restaurant.swift */,
 				201B38C21FD3D762004EB971 /* Dish.swift */,
+				202C0E001FDC153500703224 /* CartItem.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -156,11 +165,12 @@
 		20712AAC1F70CACA0008D557 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
+				204E33711FDCAF0B00684C56 /* CartViewController.swift */,
 				20712AA11F70C7340008D557 /* FilterViewController.swift */,
-				20CB03D71F721E17004767C4 /* RestaurantViewController.swift */,
+				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
 				20712AA51F70CA5E0008D557 /* MealViewController.swift */,
 				20712AA71F70CA6D0008D557 /* PaymentViewController.swift */,
+				20CB03D71F721E17004767C4 /* RestaurantViewController.swift */,
 				20712AA91F70CA770008D557 /* TrackingViewController.swift */,
 			);
 			name = "View Controller";
@@ -251,6 +261,7 @@
 				200674981FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift */,
 				2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */,
 				2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */,
+				204E33741FDCB53200684C56 /* CartTableViewCell.swift */,
 			);
 			name = "UI Component";
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 		20C115C81FD56FAA00859B89 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				202C0DFD1FDC105300703224 /* CartViewModel.swift */,
 				20C115C61FD56FA100859B89 /* FilterViewModel.swift */,
 			);
 			path = ViewModel;
@@ -608,8 +620,12 @@
 				20CB03D81F721E17004767C4 /* RestaurantViewController.swift in Sources */,
 				200674991FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift in Sources */,
 				2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */,
+				204E33721FDCAF0B00684C56 /* CartViewController.swift in Sources */,
 				20C115C71FD56FA100859B89 /* FilterViewModel.swift in Sources */,
+				204E33751FDCB53200684C56 /* CartTableViewCell.swift in Sources */,
 				2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */,
+				202C0DFE1FDC105300703224 /* CartViewModel.swift in Sources */,
+				202C0E011FDC153500703224 /* CartItem.swift in Sources */,
 				201B38C51FD3D775004EB971 /* Restaurant.swift in Sources */,
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
 				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,
