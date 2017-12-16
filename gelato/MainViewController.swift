@@ -7,8 +7,8 @@
 //
 
 import UIKit
-
-class MainViewController: UIViewController, SushiProtocol{
+import RxSwift
+class MainViewController: UIViewController, SushiProtocol, FondantProtocol{
     
 
     @IBOutlet weak var titleItem: UINavigationItem!
@@ -19,16 +19,25 @@ class MainViewController: UIViewController, SushiProtocol{
     
     @IBOutlet weak var menuView: UIView!
     
+    /* cart button */
+    @IBOutlet weak var fondant: Fondant!
+    
     var rows = 3
     let rowHeight = 322
     var sushi = [SushiRoll]()
     /* sushiRoll tag is 10, 11, 12 */
     var sushiTag = 10
     
-    
     /* User interaction value */
     var rID = 0
     var bID = 0
+    
+    var hasCartItems = Variable<Bool>(false)
+    
+    let disposeBag = DisposeBag()
+    
+    let mainViewModel = MainViewModel()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +50,32 @@ class MainViewController: UIViewController, SushiProtocol{
         
         /* set up menu items*/
         setupMenuButtons()
+        
+        fondant.delegate = self
+        
+        mainViewModel.cart.asObservable().subscribe(onNext: { [unowned self] (array) in
+            if array.count > 0 {
+                self.hasCartItems.value = true
+            }
+            else{
+                self.hasCartItems.value = false
+            }
+        })
+        .disposed(by: disposeBag)
+        
+        
+        /* binding */
+        hasCartItems.asObservable().subscribe(onNext:{ [unowned self] shouldShowButton in
+            if shouldShowButton {
+                /* display cart button */
+                self.showFondantView()
+            }
+            else {
+                /* hide button */
+                self.hideFondantView()
+            }
+        }).disposed(by: disposeBag)
+        
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -105,6 +140,23 @@ class MainViewController: UIViewController, SushiProtocol{
         self.rID = rID
         performSegue(withIdentifier: "biscuitToRestaurant", sender: sender)
     }
+    
+    // MARK: - Fondant: Cart Button
+    private func showFondantView() {
+        fondant.isHidden = false
+    }
+    private func hideFondantView() {
+        fondant.isHidden = true
+    }
+    func didClick() {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "CartViewController")
+        
+        /* present Cart View Controller */
+        self.present(controller, animated: true, completion: nil)
+    }
+    
     
 }
 
