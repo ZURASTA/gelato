@@ -12,6 +12,7 @@
 		2006749B1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */; };
 		2006749D1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */; };
 		200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */; };
+		201458401FE4F5B2006B6120 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2014583F1FE4F5B2006B6120 /* MainViewModel.swift */; };
 		201B38C31FD3D762004EB971 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B38C21FD3D762004EB971 /* Dish.swift */; };
 		201B38C51FD3D775004EB971 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B38C41FD3D775004EB971 /* Restaurant.swift */; };
 		201B38C71FD3D794004EB971 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201B38C61FD3D794004EB971 /* Ingredient.swift */; };
@@ -31,6 +32,8 @@
 		207F77BD1FC41E8B004398B5 /* ingrediants.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BA1FC41E8B004398B5 /* ingrediants.txt */; };
 		207F77BE1FC41E8B004398B5 /* dishes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BB1FC41E8B004398B5 /* dishes.txt */; };
 		207F77BF1FC41E8B004398B5 /* restaurants.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BC1FC41E8B004398B5 /* restaurants.txt */; };
+		2085A7FB1FE4F02D00002918 /* Fondant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085A7FA1FE4F02D00002918 /* Fondant.swift */; };
+		2085A7FD1FE4F05E00002918 /* Fondant.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2085A7FC1FE4F05E00002918 /* Fondant.xib */; };
 		20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2BF041F720EF600553BD4 /* Fudge.swift */; };
 		20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20A2BF051F720EF600553BD4 /* Fudge.xib */; };
 		20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A963701F6D1DAB00F528F4 /* Main.storyboard */; };
@@ -76,6 +79,7 @@
 		2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterRestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterIngredientTableViewCell.swift; sourceTree = "<group>"; };
 		200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SushiRoll.swift; sourceTree = "<group>"; };
+		2014583F1FE4F5B2006B6120 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		201B38C21FD3D762004EB971 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		201B38C41FD3D775004EB971 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		201B38C61FD3D794004EB971 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 		207F77BA1FC41E8B004398B5 /* ingrediants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ingrediants.txt; sourceTree = "<group>"; };
 		207F77BB1FC41E8B004398B5 /* dishes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dishes.txt; sourceTree = "<group>"; };
 		207F77BC1FC41E8B004398B5 /* restaurants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = restaurants.txt; sourceTree = "<group>"; };
+		2085A7FA1FE4F02D00002918 /* Fondant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fondant.swift; sourceTree = "<group>"; };
+		2085A7FC1FE4F05E00002918 /* Fondant.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Fondant.xib; sourceTree = "<group>"; };
 		20A2BF041F720EF600553BD4 /* Fudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fudge.swift; sourceTree = "<group>"; };
 		20A2BF051F720EF600553BD4 /* Fudge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Fudge.xib; sourceTree = "<group>"; };
 		20A963711F6D1DAB00F528F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -262,6 +268,8 @@
 				2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */,
 				2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */,
 				204E33741FDCB53200684C56 /* CartTableViewCell.swift */,
+				2085A7FA1FE4F02D00002918 /* Fondant.swift */,
+				2085A7FC1FE4F05E00002918 /* Fondant.xib */,
 			);
 			name = "UI Component";
 			sourceTree = "<group>";
@@ -271,6 +279,7 @@
 			children = (
 				202C0DFD1FDC105300703224 /* CartViewModel.swift */,
 				20C115C61FD56FA100859B89 /* FilterViewModel.swift */,
+				2014583F1FE4F5B2006B6120 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -419,6 +428,7 @@
 			files = (
 				207F77BE1FC41E8B004398B5 /* dishes.txt in Resources */,
 				207F77BD1FC41E8B004398B5 /* ingrediants.txt in Resources */,
+				2085A7FD1FE4F05E00002918 /* Fondant.xib in Resources */,
 				20B276B31F5F967700C1FEEF /* LaunchScreen.storyboard in Resources */,
 				2060D58B1F71067B00B5490F /* Brownie.xib in Resources */,
 				20B276B01F5F967700C1FEEF /* Assets.xcassets in Resources */,
@@ -614,11 +624,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				20AD60061F9730650052DD9E /* MMSlidingButton.swift in Sources */,
+				2085A7FB1FE4F02D00002918 /* Fondant.swift in Sources */,
 				201B38C31FD3D762004EB971 /* Dish.swift in Sources */,
 				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
 				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
 				20CB03D81F721E17004767C4 /* RestaurantViewController.swift in Sources */,
 				200674991FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift in Sources */,
+				201458401FE4F5B2006B6120 /* MainViewModel.swift in Sources */,
 				2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */,
 				204E33721FDCAF0B00684C56 /* CartViewController.swift in Sources */,
 				20C115C71FD56FA100859B89 /* FilterViewModel.swift in Sources */,

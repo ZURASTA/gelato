@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xgy-2A-xXE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6WN-Ia-gUI">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -44,7 +44,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VEGAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGY-wc-tFs">
-                                                <rect key="frame" x="10.666666666666664" y="0.0" width="67" height="24"/>
+                                                <rect key="frame" x="10" y="0.0" width="67" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -56,7 +56,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dessert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWY-Jk-vSR">
-                                                <rect key="frame" x="10" y="609" width="67.666666666666671" height="24"/>
+                                                <rect key="frame" x="10" y="609" width="68" height="24"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -111,16 +111,26 @@
                                     <constraint firstItem="2Om-DV-S2c" firstAttribute="top" secondItem="Mtt-wh-Z2j" secondAttribute="top" id="xKg-Kk-ZEn"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIq-cE-i9Y" customClass="Fondant" customModule="gelato" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="728" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zF0-ZR-Was"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Mtt-wh-Z2j" firstAttribute="leading" secondItem="ckN-4f-v8G" secondAttribute="leading" id="7yR-aa-cQN"/>
+                            <constraint firstItem="RIq-cE-i9Y" firstAttribute="leading" secondItem="bYL-9G-d5K" secondAttribute="leading" id="AqM-hW-dda"/>
                             <constraint firstItem="ckN-4f-v8G" firstAttribute="trailing" secondItem="bYL-9G-d5K" secondAttribute="trailing" id="DbB-qo-RDJ"/>
                             <constraint firstItem="bYL-9G-d5K" firstAttribute="top" secondItem="ckN-4f-v8G" secondAttribute="top" id="K3C-HP-BBT"/>
                             <constraint firstItem="rWY-Jk-vSR" firstAttribute="top" secondItem="2Om-DV-S2c" secondAttribute="top" constant="609" id="UDX-hJ-BdZ"/>
                             <constraint firstItem="ckN-4f-v8G" firstAttribute="trailing" secondItem="Mtt-wh-Z2j" secondAttribute="trailing" id="ViI-Vz-PBP"/>
                             <constraint firstItem="Mtt-wh-Z2j" firstAttribute="top" secondItem="ckN-4f-v8G" secondAttribute="top" constant="60" id="g5f-kl-OJr"/>
+                            <constraint firstItem="RIq-cE-i9Y" firstAttribute="width" secondItem="ckN-4f-v8G" secondAttribute="width" id="kxM-97-rad"/>
                             <constraint firstItem="bYL-9G-d5K" firstAttribute="leading" secondItem="ckN-4f-v8G" secondAttribute="leading" id="nw0-3l-6TL"/>
+                            <constraint firstItem="ckN-4f-v8G" firstAttribute="bottom" secondItem="RIq-cE-i9Y" secondAttribute="bottom" id="p4u-eN-oIC"/>
                             <constraint firstItem="ckN-4f-v8G" firstAttribute="bottom" secondItem="Mtt-wh-Z2j" secondAttribute="bottom" id="yGE-VK-Gtl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ckN-4f-v8G"/>
@@ -147,6 +157,7 @@
                     <connections>
                         <outlet property="contentHeightConstraint" destination="9LV-FR-bs8" id="ucx-eQ-gKQ"/>
                         <outlet property="contentView" destination="2Om-DV-S2c" id="rMH-B5-Vv4"/>
+                        <outlet property="fondant" destination="RIq-cE-i9Y" id="hlg-To-sQi"/>
                         <outlet property="menuView" destination="iPZ-ik-d59" id="g3i-Ds-oxg"/>
                         <outlet property="menuViewWidthConstraint" destination="OZr-bf-1PU" id="CLz-it-4Uq"/>
                         <outlet property="titleItem" destination="4Gu-LG-lWB" id="3pD-19-i2z"/>
@@ -461,12 +472,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YxO-O8-SaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3101.5999999999999" y="-474.38423645320199"/>
+            <point key="canvasLocation" x="3102" y="-648"/>
         </scene>
         <!--Cart View Controller-->
         <scene sceneID="jsi-ee-QA9">
             <objects>
-                <viewController id="xgy-2A-xXE" customClass="CartViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CartViewController" id="xgy-2A-xXE" customClass="CartViewController" customModule="gelato" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gld-Oa-SR7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
