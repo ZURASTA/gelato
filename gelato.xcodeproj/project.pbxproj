@@ -25,6 +25,7 @@
 		2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2052ACBF1F96CAEB0077FEDF /* Waffle.swift */; };
 		2060D58B1F71067B00B5490F /* Brownie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2060D58A1F71067B00B5490F /* Brownie.xib */; };
 		2060D58D1F7106D400B5490F /* Brownie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2060D58C1F7106D400B5490F /* Brownie.swift */; };
+		2066392A1FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */; };
 		20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA11F70C7340008D557 /* FilterViewController.swift */; };
 		20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA51F70CA5E0008D557 /* MealViewController.swift */; };
 		20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA71F70CA6D0008D557 /* PaymentViewController.swift */; };
@@ -92,6 +93,7 @@
 		2052ACBF1F96CAEB0077FEDF /* Waffle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waffle.swift; sourceTree = "<group>"; };
 		2060D58A1F71067B00B5490F /* Brownie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Brownie.xib; sourceTree = "<group>"; };
 		2060D58C1F7106D400B5490F /* Brownie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brownie.swift; sourceTree = "<group>"; };
+		206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiscuitGestureRecognizer.swift; sourceTree = "<group>"; };
 		20712AA11F70C7340008D557 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		20712AA51F70CA5E0008D557 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
 		20712AA71F70CA6D0008D557 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
@@ -255,21 +257,22 @@
 			children = (
 				20B276D61F5FA95400C1FEEF /* Biscuit.swift */,
 				20B276D81F5FA99100C1FEEF /* Biscuit.xib */,
+				206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */,
 				2060D58C1F7106D400B5490F /* Brownie.swift */,
 				2060D58A1F71067B00B5490F /* Brownie.xib */,
-				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
-				20A2BF041F720EF600553BD4 /* Fudge.swift */,
-				20A2BF051F720EF600553BD4 /* Fudge.xib */,
-				2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */,
-				2052ACBF1F96CAEB0077FEDF /* Waffle.swift */,
-				20DAE8C71FAF03A600005461 /* Cheesecake.swift */,
-				20AD60051F9730650052DD9E /* MMSlidingButton.swift */,
-				200674981FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift */,
-				2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */,
-				2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */,
 				204E33741FDCB53200684C56 /* CartTableViewCell.swift */,
+				20DAE8C71FAF03A600005461 /* Cheesecake.swift */,
+				2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */,
+				200674981FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift */,
+				2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */,
+				2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */,
 				2085A7FA1FE4F02D00002918 /* Fondant.swift */,
 				2085A7FC1FE4F05E00002918 /* Fondant.xib */,
+				20A2BF041F720EF600553BD4 /* Fudge.swift */,
+				20A2BF051F720EF600553BD4 /* Fudge.xib */,
+				20AD60051F9730650052DD9E /* MMSlidingButton.swift */,
+				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
+				2052ACBF1F96CAEB0077FEDF /* Waffle.swift */,
 			);
 			name = "UI Component";
 			sourceTree = "<group>";
@@ -629,6 +632,7 @@
 				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
 				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
 				20CB03D81F721E17004767C4 /* RestaurantViewController.swift in Sources */,
+				2066392A1FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift in Sources */,
 				200674991FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift in Sources */,
 				201458401FE4F5B2006B6120 /* MainViewModel.swift in Sources */,
 				2052ACBE1F96C9FA0077FEDF /* Cupcake.swift in Sources */,

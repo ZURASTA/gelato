@@ -21,6 +21,9 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.navigationItem.title = "Your Cart"
+        
         tableView.tableFooterView = UIView(frame: .zero)
 
         let dataSource = CartViewController.dataSource()

@@ -10,7 +10,6 @@ import UIKit
 import RxSwift
 class MainViewController: UIViewController, SushiProtocol, FondantProtocol{
     
-
     @IBOutlet weak var titleItem: UINavigationItem!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var contentHeightConstraint: NSLayoutConstraint!
@@ -53,6 +52,7 @@ class MainViewController: UIViewController, SushiProtocol, FondantProtocol{
         
         fondant.delegate = self
         
+        /* binding with view model */
         mainViewModel.cart.asObservable().subscribe(onNext: { [unowned self] (array) in
             if array.count > 0 {
                 self.hasCartItems.value = true
@@ -63,8 +63,6 @@ class MainViewController: UIViewController, SushiProtocol, FondantProtocol{
         })
         .disposed(by: disposeBag)
         
-        
-        /* binding */
         hasCartItems.asObservable().subscribe(onNext:{ [unowned self] shouldShowButton in
             if shouldShowButton {
                 /* display cart button */
@@ -149,14 +147,12 @@ class MainViewController: UIViewController, SushiProtocol, FondantProtocol{
         fondant.isHidden = true
     }
     func didClick() {
-        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "CartViewController")
         
         /* present Cart View Controller */
-        self.present(controller, animated: true, completion: nil)
+        self.navigationController?.pushViewController(controller, animated: true)
     }
-    
     
 }
 

@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 protocol BiscuitProtocol: class {
     // protocol definition goes here
     func didTap(sender: Any, bID: Int, rID: Int)
 }
 
-class Biscuit: UIView {
+class Biscuit: UIView, BiscuitGesture {
 
     // MARK: - Properties
     @IBOutlet weak var imageView: UIImageView!
@@ -66,6 +67,8 @@ class Biscuit: UIView {
         
         // Show the view.
         addSubview(view)
+        
+        setDeepPressAction(target: self, action: #selector(handleDeepPress(value:)))
     }
     
     // Loads a XIB file into a view and returns this view.
@@ -78,13 +81,26 @@ class Biscuit: UIView {
         return view
     }
     
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @objc private func handleDeepPress(value: BiscuitGestureRecognizer){
+        
+        if value.state == UIGestureRecognizerState.began
+        {
+            /* add item to a cart, save to Realm */
+            print("deep press begin")
+            let realm = try! Realm()
+            
+            let cartItem = CartItem()
+            cartItem.id = Int(arc4random())
+            cartItem.name = "Beef Sandwich"
+            cartItem.price = 10.2
+            try! realm.write {
+                realm.add(cartItem)
+            }
+        }
+        else if value.state == UIGestureRecognizerState.ended
+        {
+            print("deep press ends.")
+        }
     }
-    */
 
 }
