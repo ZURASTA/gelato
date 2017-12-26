@@ -87,15 +87,14 @@ class Biscuit: UIView, BiscuitGesture {
         {
             /* add item to a cart, save to Realm */
             print("deep press begin")
-            let realm = try! Realm()
-            
+
             let cartItem = CartItem()
             cartItem.id = Int(arc4random())
             cartItem.name = "Beef Sandwich"
             cartItem.price = 10.2
-            try! realm.write {
-                realm.add(cartItem)
-            }
+            
+            RealmManager.sharedInstance.addCartItem(item: cartItem)
+        
         }
         else if value.state == UIGestureRecognizerState.ended
         {

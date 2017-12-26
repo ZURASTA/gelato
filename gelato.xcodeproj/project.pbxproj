@@ -28,13 +28,14 @@
 		2066392A1FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */; };
 		20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA11F70C7340008D557 /* FilterViewController.swift */; };
 		20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA51F70CA5E0008D557 /* MealViewController.swift */; };
-		20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA71F70CA6D0008D557 /* PaymentViewController.swift */; };
 		20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20712AA91F70CA770008D557 /* TrackingViewController.swift */; };
 		207F77BD1FC41E8B004398B5 /* ingrediants.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BA1FC41E8B004398B5 /* ingrediants.txt */; };
 		207F77BE1FC41E8B004398B5 /* dishes.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BB1FC41E8B004398B5 /* dishes.txt */; };
 		207F77BF1FC41E8B004398B5 /* restaurants.txt in Resources */ = {isa = PBXBuildFile; fileRef = 207F77BC1FC41E8B004398B5 /* restaurants.txt */; };
 		2085A7FB1FE4F02D00002918 /* Fondant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2085A7FA1FE4F02D00002918 /* Fondant.swift */; };
 		2085A7FD1FE4F05E00002918 /* Fondant.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2085A7FC1FE4F05E00002918 /* Fondant.xib */; };
+		208C610B1FF2933000B35DF3 /* MealViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208C610A1FF2933000B35DF3 /* MealViewModel.swift */; };
+		208C610D1FF293AF00B35DF3 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208C610C1FF293AF00B35DF3 /* RealmManager.swift */; };
 		20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A2BF041F720EF600553BD4 /* Fudge.swift */; };
 		20A2BF071F720EF600553BD4 /* Fudge.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20A2BF051F720EF600553BD4 /* Fudge.xib */; };
 		20A963721F6D1DAB00F528F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20A963701F6D1DAB00F528F4 /* Main.storyboard */; };
@@ -96,13 +97,14 @@
 		206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiscuitGestureRecognizer.swift; sourceTree = "<group>"; };
 		20712AA11F70C7340008D557 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		20712AA51F70CA5E0008D557 /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
-		20712AA71F70CA6D0008D557 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		20712AA91F70CA770008D557 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
 		207F77BA1FC41E8B004398B5 /* ingrediants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ingrediants.txt; sourceTree = "<group>"; };
 		207F77BB1FC41E8B004398B5 /* dishes.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dishes.txt; sourceTree = "<group>"; };
 		207F77BC1FC41E8B004398B5 /* restaurants.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = restaurants.txt; sourceTree = "<group>"; };
 		2085A7FA1FE4F02D00002918 /* Fondant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fondant.swift; sourceTree = "<group>"; };
 		2085A7FC1FE4F05E00002918 /* Fondant.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Fondant.xib; sourceTree = "<group>"; };
+		208C610A1FF2933000B35DF3 /* MealViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewModel.swift; sourceTree = "<group>"; };
+		208C610C1FF293AF00B35DF3 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		20A2BF041F720EF600553BD4 /* Fudge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fudge.swift; sourceTree = "<group>"; };
 		20A2BF051F720EF600553BD4 /* Fudge.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Fudge.xib; sourceTree = "<group>"; };
 		20A963711F6D1DAB00F528F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -177,7 +179,6 @@
 				20712AA11F70C7340008D557 /* FilterViewController.swift */,
 				20B276A71F5F967700C1FEEF /* MainViewController.swift */,
 				20712AA51F70CA5E0008D557 /* MealViewController.swift */,
-				20712AA71F70CA6D0008D557 /* PaymentViewController.swift */,
 				20CB03D71F721E17004767C4 /* RestaurantViewController.swift */,
 				20712AA91F70CA770008D557 /* TrackingViewController.swift */,
 			);
@@ -193,6 +194,14 @@
 				207F77BC1FC41E8B004398B5 /* restaurants.txt */,
 			);
 			path = "Dummy data";
+			sourceTree = "<group>";
+		};
+		208C610E1FF293CE00B35DF3 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				208C610C1FF293AF00B35DF3 /* RealmManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		20B276991F5F967700C1FEEF = {
@@ -220,16 +229,17 @@
 		20B276A41F5F967700C1FEEF /* gelato */ = {
 			isa = PBXGroup;
 			children = (
-				203C753B1FD0052200932C88 /* Data Model */,
-				207F77B91FC41DF8004398B5 /* Dummy data */,
 				20B276A51F5F967700C1FEEF /* AppDelegate.swift */,
 				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
+				203C753B1FD0052200932C88 /* Data Model */,
+				208C610E1FF293CE00B35DF3 /* DataManager */,
+				207F77B91FC41DF8004398B5 /* Dummy data */,
 				20B276B41F5F967700C1FEEF /* Info.plist */,
 				20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */,
 				20A963701F6D1DAB00F528F4 /* Main.storyboard */,
-				20C115C81FD56FAA00859B89 /* ViewModel */,
 				20B276DA1F5FAA1F00C1FEEF /* UI Component */,
 				20712AAC1F70CACA0008D557 /* View Controller */,
+				20C115C81FD56FAA00859B89 /* ViewModel */,
 			);
 			path = gelato;
 			sourceTree = "<group>";
@@ -283,6 +293,7 @@
 				202C0DFD1FDC105300703224 /* CartViewModel.swift */,
 				20C115C61FD56FA100859B89 /* FilterViewModel.swift */,
 				2014583F1FE4F5B2006B6120 /* MainViewModel.swift */,
+				208C610A1FF2933000B35DF3 /* MealViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -631,6 +642,7 @@
 				201B38C31FD3D762004EB971 /* Dish.swift in Sources */,
 				20712AA21F70C7340008D557 /* FilterViewController.swift in Sources */,
 				20712AA61F70CA5E0008D557 /* MealViewController.swift in Sources */,
+				208C610B1FF2933000B35DF3 /* MealViewModel.swift in Sources */,
 				20CB03D81F721E17004767C4 /* RestaurantViewController.swift in Sources */,
 				2066392A1FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift in Sources */,
 				200674991FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift in Sources */,
@@ -642,6 +654,7 @@
 				2052ACC01F96CAEB0077FEDF /* Waffle.swift in Sources */,
 				202C0DFE1FDC105300703224 /* CartViewModel.swift in Sources */,
 				202C0E011FDC153500703224 /* CartItem.swift in Sources */,
+				208C610D1FF293AF00B35DF3 /* RealmManager.swift in Sources */,
 				201B38C51FD3D775004EB971 /* Restaurant.swift in Sources */,
 				20B276A81F5F967700C1FEEF /* MainViewController.swift in Sources */,
 				20712AAA1F70CA770008D557 /* TrackingViewController.swift in Sources */,
@@ -652,7 +665,6 @@
 				201B38C71FD3D794004EB971 /* Ingredient.swift in Sources */,
 				200BC1FD1F5FB344005C30A1 /* SushiRoll.swift in Sources */,
 				20A2BF061F720EF600553BD4 /* Fudge.swift in Sources */,
-				20712AA81F70CA6D0008D557 /* PaymentViewController.swift in Sources */,
 				2006749D1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift in Sources */,
 				20B276D71F5FA95400C1FEEF /* Biscuit.swift in Sources */,
 			);
