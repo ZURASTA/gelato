@@ -43,7 +43,7 @@ class BiscuitGestureRecognizer: UIGestureRecognizer
     {
         super.touchesEnded(touches, with: event)
         
-        state = deepPressed ? UIGestureRecognizerState.ended : UIGestureRecognizerState.failed
+        state = deepPressed ? UIGestureRecognizer.State.ended : UIGestureRecognizer.State.failed
         
         deepPressed = false
     }
@@ -58,7 +58,7 @@ class BiscuitGestureRecognizer: UIGestureRecognizer
         if !deepPressed && (touch.force / touch.maximumPossibleForce) >= threshold
         {
             
-            state = UIGestureRecognizerState.began
+            state = UIGestureRecognizer.State.began
             
             if vibrateOnDeepPress
             {
@@ -69,7 +69,7 @@ class BiscuitGestureRecognizer: UIGestureRecognizer
         }
         else if deepPressed && (touch.force / touch.maximumPossibleForce) < threshold
         {
-            state = UIGestureRecognizerState.ended
+            state = UIGestureRecognizer.State.ended
             
             deepPressed = false
         }

@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'gelato' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -7,8 +7,8 @@ target 'gelato' do
 
   # Pods for gelato
   pod "RxRealm"
-  pod 'RxSwift',    '~> 4.0'
-  pod 'RxCocoa',    '~> 4.0'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   pod 'RxDataSources'
   
   target 'gelatoTests' do

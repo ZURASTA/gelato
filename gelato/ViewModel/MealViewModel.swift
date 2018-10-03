@@ -19,7 +19,6 @@ class MealViewModel {
         cartItem.price = 10.2
         RealmManager.sharedInstance.addCartItem(item: cartItem)
         
-        
     }
     
     

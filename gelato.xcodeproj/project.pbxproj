@@ -333,7 +333,6 @@
 				20B2769F1F5F967700C1FEEF /* Frameworks */,
 				20B276A01F5F967700C1FEEF /* Resources */,
 				DEB77E43AD59A3560D405A67 /* [CP] Embed Pods Frameworks */,
-				44F82309FCE1B3F90AED4E4C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,8 +351,6 @@
 				20B276B51F5F967700C1FEEF /* Sources */,
 				20B276B61F5F967700C1FEEF /* Frameworks */,
 				20B276B71F5F967700C1FEEF /* Resources */,
-				8974B67A84647E49DB84F41F /* [CP] Embed Pods Frameworks */,
-				FE576D20304014A8C0FFAD57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,8 +370,6 @@
 				20B276C01F5F967700C1FEEF /* Sources */,
 				20B276C11F5F967700C1FEEF /* Frameworks */,
 				20B276C21F5F967700C1FEEF /* Resources */,
-				6EE35030A04AE75ABED62351 /* [CP] Embed Pods Frameworks */,
-				E4BC7C992E3997D519432BF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -489,21 +484,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44F82309FCE1B3F90AED4E4C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelato/Pods-gelato-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5A8452F907F89C3BB28010B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,36 +500,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6EE35030A04AE75ABED62351 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoUITests/Pods-gelatoUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8974B67A84647E49DB84F41F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoTests/Pods-gelatoTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9EF273564043405362093D8A /* [CP] Check Pods Manifest.lock */ = {
@@ -598,36 +548,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelato/Pods-gelato-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4BC7C992E3997D519432BF4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoUITests/Pods-gelatoUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FE576D20304014A8C0FFAD57 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-gelatoTests/Pods-gelatoTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -839,7 +759,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -854,7 +775,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zurasta.gelato;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
