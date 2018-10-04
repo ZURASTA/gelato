@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         /* disable navigation bar border*/
@@ -39,6 +39,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("error")
             }
         }
+        
+        BITHockeyManager.shared().configure(withIdentifier: "809f6d7b09b24bc3baa5ebcb26c5d6f4")
+        // Do some additional configuration if needed here
+        BITHockeyManager.shared().start()
+        BITHockeyManager.shared().authenticator.authenticateInstallation()
+
         
         return true
     }

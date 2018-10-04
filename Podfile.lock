@@ -1,36 +1,52 @@
 PODS:
-  - Differentiator (3.0.2)
-  - Realm (3.0.2):
-    - Realm/Headers (= 3.0.2)
-  - Realm/Headers (3.0.2)
-  - RealmSwift (3.0.2):
-    - Realm (= 3.0.2)
-  - RxCocoa (4.0.0):
+  - Differentiator (3.1.0)
+  - HockeySDK (5.1.4):
+    - HockeySDK/DefaultLib (= 5.1.4)
+  - HockeySDK/DefaultLib (5.1.4)
+  - Realm (3.10.0):
+    - Realm/Headers (= 3.10.0)
+  - Realm/Headers (3.10.0)
+  - RealmSwift (3.10.0):
+    - Realm (= 3.10.0)
+  - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
-  - RxDataSources (3.0.2):
+  - RxDataSources (3.1.0):
     - Differentiator (~> 3.0)
     - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxRealm (0.7.5):
     - RealmSwift (~> 3.0)
     - RxSwift (~> 4.0)
-  - RxSwift (4.0.0)
+  - RxSwift (4.3.1)
 
 DEPENDENCIES:
-  - RxCocoa (~> 4.0)
+  - HockeySDK (~> 5.1.4)
+  - RxCocoa
   - RxDataSources
   - RxRealm
-  - RxSwift (~> 4.0)
+  - RxSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Differentiator
+    - HockeySDK
+    - Realm
+    - RealmSwift
+    - RxCocoa
+    - RxDataSources
+    - RxRealm
+    - RxSwift
 
 SPEC CHECKSUMS:
-  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
-  Realm: 6f23fd1f178a09342eac21bfa7c2bf4312a7a180
-  RealmSwift: 695393add1b8f9d5fa75dd16e6355cf3935f71e2
-  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
-  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
+  Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  HockeySDK: 15afe6bc0a5bfe3a531fd73dbf082095f37dac3b
+  Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
+  RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxDataSources: a843bad90c29817f5923ec8163f4af2de084ceb3
   RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
-  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 0f1dfb8d60c3fd77954c6544a5349bf70702bf87
+PODFILE CHECKSUM: bac50b476d9b848d36911b8642e28662150c3e6d
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3

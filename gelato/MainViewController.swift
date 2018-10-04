@@ -147,11 +147,7 @@ class MainViewController: UIViewController, SushiProtocol, FondantProtocol{
         fondant.isHidden = true
     }
     func didClick() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "CartViewController")
-        
-        /* present Cart View Controller */
-        self.navigationController?.pushViewController(controller, animated: true)
+        self.navigationController?.performSegue(withIdentifier: "mainToCart", sender: self)
     }
     
 }

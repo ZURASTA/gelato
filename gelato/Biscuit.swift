@@ -83,21 +83,20 @@ class Biscuit: UIView, BiscuitGesture {
     
     @objc private func handleDeepPress(value: BiscuitGestureRecognizer){
         
-        if value.state == UIGestureRecognizerState.began
+        if value.state == UIGestureRecognizer.State.began
         {
             /* add item to a cart, save to Realm */
             print("deep press begin")
-            let realm = try! Realm()
-            
+
             let cartItem = CartItem()
             cartItem.id = Int(arc4random())
             cartItem.name = "Beef Sandwich"
             cartItem.price = 10.2
-            try! realm.write {
-                realm.add(cartItem)
-            }
+            
+            RealmManager.sharedInstance.addCartItem(item: cartItem)
+        
         }
-        else if value.state == UIGestureRecognizerState.ended
+        else if value.state == UIGestureRecognizer.State.ended
         {
             print("deep press ends.")
         }

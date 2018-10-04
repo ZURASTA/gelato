@@ -10,9 +10,22 @@ import UIKit
 
 class MealViewController: UIViewController {
 
+    
+    let mealViewModel = MealViewModel()
+    
+    @IBAction func addToCart(_ sender: Any) {
+        
+        mealViewModel.addMeal()
+        
+        self.navigationController?.performSegue(withIdentifier: "mealToCart", sender: self)
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 
