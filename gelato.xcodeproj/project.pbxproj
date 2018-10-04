@@ -173,7 +173,26 @@
 			path = "Data Model";
 			sourceTree = "<group>";
 		};
-		20712AAC1F70CACA0008D557 /* View Controller */ = {
+		207F77B91FC41DF8004398B5 /* dummy */ = {
+			isa = PBXGroup;
+			children = (
+				203C753C1FD014D400932C88 /* preloaded.realm */,
+				207F77BB1FC41E8B004398B5 /* dishes.txt */,
+				207F77BA1FC41E8B004398B5 /* ingrediants.txt */,
+				207F77BC1FC41E8B004398B5 /* restaurants.txt */,
+			);
+			path = dummy;
+			sourceTree = "<group>";
+		};
+		2088063C216659AA009F7402 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				207F77B91FC41DF8004398B5 /* dummy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2088063E216659F3009F7402 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
 				204E33711FDCAF0B00684C56 /* CartViewController.swift */,
@@ -183,26 +202,58 @@
 				20CB03D71F721E17004767C4 /* RestaurantViewController.swift */,
 				20712AA91F70CA770008D557 /* TrackingViewController.swift */,
 			);
-			name = "View Controller";
+			path = "View Controller";
 			sourceTree = "<group>";
 		};
-		207F77B91FC41DF8004398B5 /* Dummy data */ = {
+		2088063F21665A1F009F7402 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				203C753C1FD014D400932C88 /* preloaded.realm */,
-				207F77BB1FC41E8B004398B5 /* dishes.txt */,
-				207F77BA1FC41E8B004398B5 /* ingrediants.txt */,
-				207F77BC1FC41E8B004398B5 /* restaurants.txt */,
+				2088064121665A5E009F7402 /* storyboard */,
+				2088064021665A38009F7402 /* xib */,
+				20B276D61F5FA95400C1FEEF /* Biscuit.swift */,
+				206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */,
+				2060D58C1F7106D400B5490F /* Brownie.swift */,
+				204E33741FDCB53200684C56 /* CartTableViewCell.swift */,
+				20DAE8C71FAF03A600005461 /* Cheesecake.swift */,
+				2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */,
+				200674981FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift */,
+				2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */,
+				2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */,
+				2085A7FA1FE4F02D00002918 /* Fondant.swift */,
+				20A2BF041F720EF600553BD4 /* Fudge.swift */,
+				20AD60051F9730650052DD9E /* MMSlidingButton.swift */,
+				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
+				2052ACBF1F96CAEB0077FEDF /* Waffle.swift */,
 			);
-			path = "Dummy data";
+			path = UI;
 			sourceTree = "<group>";
 		};
-		208C610E1FF293CE00B35DF3 /* DataManager */ = {
+		2088064021665A38009F7402 /* xib */ = {
+			isa = PBXGroup;
+			children = (
+				20B276D81F5FA99100C1FEEF /* Biscuit.xib */,
+				2060D58A1F71067B00B5490F /* Brownie.xib */,
+				2085A7FC1FE4F05E00002918 /* Fondant.xib */,
+				20A2BF051F720EF600553BD4 /* Fudge.xib */,
+			);
+			path = xib;
+			sourceTree = "<group>";
+		};
+		2088064121665A5E009F7402 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */,
+				20A963701F6D1DAB00F528F4 /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		208C610E1FF293CE00B35DF3 /* Data Manager */ = {
 			isa = PBXGroup;
 			children = (
 				208C610C1FF293AF00B35DF3 /* RealmManager.swift */,
 			);
-			path = DataManager;
+			path = "Data Manager";
 			sourceTree = "<group>";
 		};
 		20B276991F5F967700C1FEEF = {
@@ -233,15 +284,13 @@
 			children = (
 				20B276A51F5F967700C1FEEF /* AppDelegate.swift */,
 				20B276AF1F5F967700C1FEEF /* Assets.xcassets */,
+				208C610E1FF293CE00B35DF3 /* Data Manager */,
 				203C753B1FD0052200932C88 /* Data Model */,
-				208C610E1FF293CE00B35DF3 /* DataManager */,
-				207F77B91FC41DF8004398B5 /* Dummy data */,
 				20B276B41F5F967700C1FEEF /* Info.plist */,
-				20B276B11F5F967700C1FEEF /* LaunchScreen.storyboard */,
-				20A963701F6D1DAB00F528F4 /* Main.storyboard */,
-				20B276DA1F5FAA1F00C1FEEF /* UI Component */,
-				20712AAC1F70CACA0008D557 /* View Controller */,
-				20C115C81FD56FAA00859B89 /* ViewModel */,
+				2088063C216659AA009F7402 /* Resources */,
+				2088063F21665A1F009F7402 /* UI */,
+				2088063E216659F3009F7402 /* View Controller */,
+				20C115C81FD56FAA00859B89 /* View Model */,
 			);
 			path = gelato;
 			sourceTree = "<group>";
@@ -264,32 +313,7 @@
 			path = gelatoUITests;
 			sourceTree = "<group>";
 		};
-		20B276DA1F5FAA1F00C1FEEF /* UI Component */ = {
-			isa = PBXGroup;
-			children = (
-				20B276D61F5FA95400C1FEEF /* Biscuit.swift */,
-				20B276D81F5FA99100C1FEEF /* Biscuit.xib */,
-				206639291FE5EF1F00D64D15 /* BiscuitGestureRecognizer.swift */,
-				2060D58C1F7106D400B5490F /* Brownie.swift */,
-				2060D58A1F71067B00B5490F /* Brownie.xib */,
-				204E33741FDCB53200684C56 /* CartTableViewCell.swift */,
-				20DAE8C71FAF03A600005461 /* Cheesecake.swift */,
-				2052ACBD1F96C9FA0077FEDF /* Cupcake.swift */,
-				200674981FD6C5BC00D16EE6 /* FilterDishTableViewCell.swift */,
-				2006749C1FD6C5E800D16EE6 /* FilterIngredientTableViewCell.swift */,
-				2006749A1FD6C5D000D16EE6 /* FilterRestaurantTableViewCell.swift */,
-				2085A7FA1FE4F02D00002918 /* Fondant.swift */,
-				2085A7FC1FE4F05E00002918 /* Fondant.xib */,
-				20A2BF041F720EF600553BD4 /* Fudge.swift */,
-				20A2BF051F720EF600553BD4 /* Fudge.xib */,
-				20AD60051F9730650052DD9E /* MMSlidingButton.swift */,
-				200BC1FC1F5FB344005C30A1 /* SushiRoll.swift */,
-				2052ACBF1F96CAEB0077FEDF /* Waffle.swift */,
-			);
-			name = "UI Component";
-			sourceTree = "<group>";
-		};
-		20C115C81FD56FAA00859B89 /* ViewModel */ = {
+		20C115C81FD56FAA00859B89 /* View Model */ = {
 			isa = PBXGroup;
 			children = (
 				202C0DFD1FDC105300703224 /* CartViewModel.swift */,
@@ -297,7 +321,7 @@
 				2014583F1FE4F5B2006B6120 /* MainViewModel.swift */,
 				208C610A1FF2933000B35DF3 /* MealViewModel.swift */,
 			);
-			path = ViewModel;
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		32DD20685A0B3DF6F0A60E01 /* Frameworks */ = {
