@@ -10,6 +10,7 @@ target 'gelato' do
   pod 'RxSwift'
   pod 'RxCocoa'
   pod 'RxDataSources'
+  pod 'HockeySDK', '~> 5.1.4'
   
   target 'gelatoTests' do
     inherit! :search_paths

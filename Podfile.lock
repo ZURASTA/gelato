@@ -1,5 +1,8 @@
 PODS:
   - Differentiator (3.1.0)
+  - HockeySDK (5.1.4):
+    - HockeySDK/DefaultLib (= 5.1.4)
+  - HockeySDK/DefaultLib (5.1.4)
   - Realm (3.10.0):
     - Realm/Headers (= 3.10.0)
   - Realm/Headers (3.10.0)
@@ -17,6 +20,7 @@ PODS:
   - RxSwift (4.3.1)
 
 DEPENDENCIES:
+  - HockeySDK (~> 5.1.4)
   - RxCocoa
   - RxDataSources
   - RxRealm
@@ -25,6 +29,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Differentiator
+    - HockeySDK
     - Realm
     - RealmSwift
     - RxCocoa
@@ -34,6 +39,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  HockeySDK: 15afe6bc0a5bfe3a531fd73dbf082095f37dac3b
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
@@ -41,6 +47,6 @@ SPEC CHECKSUMS:
   RxRealm: a6c6c0a07cb61f34209969ca6657734edfdfff30
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
 
-PODFILE CHECKSUM: 352561191a08ffc137f2b6629604b93b75cdab92
+PODFILE CHECKSUM: bac50b476d9b848d36911b8642e28662150c3e6d
 
 COCOAPODS: 1.5.3
